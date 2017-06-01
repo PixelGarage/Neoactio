@@ -27,9 +27,9 @@
    * Anchor menus: Scrolls smoothly to anchor due to menu click.
    */
   Drupal.behaviors.smoothScrolltoAnchors = {
-    attach: function(context, settings) {
-      $(function() {
-        $('.menu li.leaf a').click(function() {
+    attach: function (context, settings) {
+      $(function () {
+        $('.menu li.leaf a').click(function () {
           var anchorPos = this.href.indexOf('#');
           // no anchor available, perform click
           if (anchorPos == -1) return true;
@@ -48,6 +48,47 @@
       });
     }
   };
+
+  Drupal.behaviors.randomPeItemWidth = {
+    attach: function (context, settings) {
+      var $view = $('.view.view-werk');
+      if ($view.length <= 0) return;
+
+      var $rows = $view.find('.views-row'),
+        randomClass = function () {
+          var classes = ['pe-item-width-66', 'pe-item-width-50', 'pe-item-width-100'],
+            rand = Math.random() * 100;
+
+          if (rand >= 0 && rand < 33) {
+            return classes[0];
+          }
+          else if (rand >= 33 && rand < 66) {
+            return classes[1];
+          }
+          else if (rand >= 66 && rand <= 100) {
+            return classes[2];
+          }
+        };
+
+      //
+      // add random class to all items
+      var doAgain = false;
+      $rows.each(function(index) {
+        // add same random class again
+        if (doAgain) {
+          $(this).addClass('pe-item-width-50');
+          doAgain = false;
+          return;
+        }
+
+        // add random class
+        var rndmClass = randomClass();
+
+        doAgain = (rndmClass == 'pe-item-width-50');
+        $(this).addClass(rndmClass);
+      });
+    }
+  }
 
   /**
    * Allows full size clickable items.

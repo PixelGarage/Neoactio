@@ -86,7 +86,6 @@
     letter-spacing: @title-letter-spacing;
     line-height: @title-line-height;
     text-align: @title-text-align;
-    color: @text-color;
   }
 
   .subtitle() {
@@ -95,7 +94,6 @@
     letter-spacing: @subtitle-letter-spacing;
     line-height: @subtitle-line-height;
     text-align: @subtitle-text-align;
-    color: @text-color;
   }
 
   .text() {
@@ -104,7 +102,6 @@
     letter-spacing: @text-letter-spacing;
     line-height: @text-line-height;
     text-align: @text-text-align;
-    color: @text-color;
   }
 
   .glow() {
@@ -114,7 +111,6 @@
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
-    color: @text-color;
     //.animation(text-glow 3s ease-in-out infinite alternate);
     //.keyframes-text-glow();
     text-shadow: 0 0 10px @pxl-color-glow, 0 0 10px @pxl-color-glow, 0 0 10px @pxl-color-glow, 0 0 20px @pxl-color-glow, 0 0 20px @pxl-color-glow, 0 0 20px @pxl-color-glow, 0 0 20px @pxl-color-glow, 0 0 30px @pxl-color-glow;
@@ -131,6 +127,8 @@
   //
   // WYSIWYG body
   .wysiwyg-body() {
+    color: @text-color;
+
     h1, h2, h3, .pxl-title {
       margin: 10px auto 20px;
       .title();
@@ -144,7 +142,7 @@
     p {
       margin: 0 0 10px;
       .text();
-      .hyphenate;
+      //.hyphenate;
     }
 
     .pxl-glow {

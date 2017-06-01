@@ -1,0 +1,38 @@
+/*
+ *  Node footer component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-footer{
+  .row{
+    .col-sm-6{
+      .field-name-field-text-left,
+      .field-name-field-text-left2,
+      .field-name-field-text-right,
+      .field-name-field-text-right2 {
+        display: inline-block;
+        width: 50%;
+        margin: 0 -2px;
+        padding: 10px 10px 0 0;
+
+        .field-item{
+          #pxl-mixins.wysiwyg-body();
+
+          p, a {
+            #pxl-mixins.font-size-responsive(15px, 15px, 13px);
+          }
+        }
+      }
+    }
+  }
+}

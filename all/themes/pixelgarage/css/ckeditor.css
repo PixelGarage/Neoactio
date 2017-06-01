@@ -2372,7 +2372,6 @@
   letter-spacing: 0.02em;
   line-height: 1.4em;
   text-align: left;
-  color: #222;
   color: #000;
 }
 @media screen and (min-width: 35.2em) {
@@ -2396,7 +2395,6 @@
   letter-spacing: 0.02em;
   line-height: 1.2em;
   text-align: left;
-  color: #222;
   color: #000;
 }
 @media screen and (min-width: 36em) {
@@ -2420,7 +2418,6 @@
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
-  color: #222;
   color: #000;
 }
 @media screen and (min-width: 42.35294117647059em) {
@@ -2445,7 +2442,6 @@
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  color: #222;
   text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
 }
 @media screen and (min-width: 24em) {
@@ -2469,7 +2465,6 @@
   letter-spacing: 0.02em;
   line-height: 1.4em;
   text-align: left;
-  color: #222;
   text-align: center;
   color: #000;
 }

@@ -1,0 +1,64 @@
+/*
+ *  Node projekt component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-projekt.view-mode-full,
+.node.node-projekt.view-mode-default {
+  >.row {
+    >div.col-sm-12 {
+
+      >.field-name-title {
+        h2 {
+          #pxl-mixins.title();
+        }
+      }
+
+      >.field-name-body {
+        margin: 0 0 80px;
+        #pxl-mixins.wysiwyg-body();
+      }
+    }
+  }
+}
+
+.node.node-projekt.view-mode-teaser {
+  >.row {
+    >div.col-sm-12 {
+      .projekt-media {
+        img {
+          display: block;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .projekt-hover {
+        .projekt-title {
+          .field-name-title {
+            h2 {
+              #pxl-mixins.title();
+            }
+          }
+        }
+
+        .projekt-slogan {
+
+        }
+      }
+    }
+  }
+}
