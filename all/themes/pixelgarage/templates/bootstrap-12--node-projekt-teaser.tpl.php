@@ -5,7 +5,6 @@
  */
 ?>
 
-
 <<?php print $layout_wrapper; print $layout_attributes; ?> class="<?php print $classes; ?>">
   <?php if (isset($title_suffix['contextual_links'])): ?>
     <?php print render($title_suffix['contextual_links']); ?>
@@ -18,6 +17,7 @@
       <div class="projekt-hover">
           <div class="projekt-title"><?php print render($content['title']); ?></div>
           <div class="projekt-slogan"><?php print $slogan; ?></div>
+          <div class="projekt-year"><?php print $year; ?></div>
       </div>
     </<?php print $central_wrapper; ?>>
   </div>

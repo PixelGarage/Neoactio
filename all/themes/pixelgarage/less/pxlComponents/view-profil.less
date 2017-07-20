@@ -1,0 +1,55 @@
+/*
+ *  View profil component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.view.view-profil {
+  width: 100%;
+
+  .view-content {
+    margin: 0 -@grid-gutter-width/2;
+    padding: 0;
+
+    .views-row {
+      display: inline-block;
+      vertical-align: top;
+      overflow: visible;
+      margin: 0 -2px @grid-gutter-width;
+      padding: 0 @grid-gutter-width/2;
+      width: 100%;
+      opacity: 1.0;
+      #pxl-mixins.transition(opacity 1s);
+        &.shown {
+        opacity: 1.0;
+      }
+
+      &.pe-item-ajax, &.pe-item-no-ajax, &.pe-item-linked {
+        cursor: pointer;
+        // see nodes styling (posts, testimonials, SoMe etc.)
+      }
+    }
+
+    @media @narrow {
+      .views-row {
+        width: 50%;
+      }
+    }
+
+    @media @normal {
+      .views-row {
+        width: 33.333333%;
+      }
+    }
+
+  }
+}

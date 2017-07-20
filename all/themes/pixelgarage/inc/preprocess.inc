@@ -27,20 +27,29 @@ function pixelgarage_preprocess_page(&$vars) {
 }
 
 
-function pixelgarage_ds_pre_render_alter (&$layout_render_array, $context, &$vars) {
-    // check node type
-    if ($context['entity_type'] == 'node' && $context['bundle'] == 'projekt') {
-        _preprocess_node_projekt($vars);
-    }
+function pixelgarage_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
+  // check node type
+  if ($context['entity_type'] == 'node' && $context['bundle'] == 'projekt') {
+    _preprocess_node_projekt($vars);
+  }
 }
 
 function _preprocess_node_projekt(&$vars) {
-    $node = $vars['node'];
+  $node = $vars['node'];
 
-    $media = null;
-    if (!empty($vars['field_images']) && $media = $vars['field_images'][0]) {
-        $media_path = file_create_url($media['uri']);
-    }
-    $vars['media_path'] = $media_path;
-    $vars['slogan'] = !empty($vars['content']['field_text']) ? render($vars['content']['field_text']) : '';
+  //
+  // create image paths
+  global $base_url;
+
+  $path = $base_url . '/' . drupal_get_path('theme', 'pixelgarage');
+  $vars['info_icon_path'] = $path . "/images/popup_close.svg";
+  $vars['close_icon_path'] = $path . "/images/popup_close.svg";
+
+  $media = null;
+  if (!empty($vars['field_images']) && $media = $vars['field_images'][0]) {
+    $media_path = file_create_url($media['uri']);
+  }
+  $vars['media_path'] = $media_path;
+  $vars['slogan'] = !empty($vars['content']['field_text']) ? render($vars['content']['field_text']) : '';
+  $vars['year'] = !empty($vars['content']['field_jahr']) ? render($vars['content']['field_jahr']) : '';
 }

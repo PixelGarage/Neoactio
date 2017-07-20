@@ -14,6 +14,14 @@
 // -------------------------
 #block-locale-language {
   display:inline-block;
+  vertical-align: top;
+  position:absolute;
+  right: 80px;
+  top: 20px;
+
+  @media @tablet {
+    right: @grid-gutter-width/2;
+  }
 
   ul.language-switcher-locale-url {
     #pxl-mixins.no-list-style;
@@ -21,24 +29,21 @@
     >li {
       #pxl-mixins.no-list-style;
       display:inline-block;
-      margin: 0 -0.25em 0 0;
-      padding: 0 10px;
+      margin:0;
+      padding: 0;
       font-family: @pxl-text-font;
       font-size: @font-size-base;
       color: @text-color;
       line-height: 1;
-      border-right: 1px solid @text-color;
+      //border-right: 1px solid @text-color;
 
-      &.first {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      &.last {
-        border-right: none;
+      &.active {
+        display: none;
       }
 
       a.language-link {
-        text-transform: uppercase;
+        display: block;
+        //text-transform: uppercase;
         text-decoration: none;
         color: @link-color;
         outline: none;

@@ -4,7 +4,7 @@
 
 // Variables
 // -------------------------
-
+@paragraph-gutter-width: 30px;
 
 // Mixins
 // -------------------------
@@ -27,19 +27,24 @@
       >.field-name-body {
         margin: 0 0 80px;
         #pxl-mixins.wysiwyg-body();
+
+        @media @narrow{
+          .content-columns(2);
+        }
+        @media @tablet{
+          .content-columns(2);
+        }
+        @media @normal{
+          .content-columns(3);
+        }
+
       }
 
       >.paragraphs-items {
         >.field-name-field-paragraphs {
           >.field-items {
-            >.field-item:not(:last-child) {
+            >.field-item {
               margin-bottom: @paragraph-margin-bottom;
-
-              @media @tablet {
-                margin-bottom: @paragraph-margin-bottom-large;
-              }
-
-
               // see paragraph-item-... less files
             }
           }
@@ -49,3 +54,134 @@
     }
   }
 }
+
+//
+// PAGE SPEKTRUM
+.page-node-62 {
+    .node.node-page.view-mode-full,
+    .node.node-page.view-mode-default {
+      > .row {
+        > div.col-sm-12 {
+
+          > .field-name-title {
+            h2 {
+              #pxl-mixins.title();
+            }
+          }
+
+          > .field-name-body {
+            margin: 0 0 80px;
+            #pxl-mixins.wysiwyg-body();
+          }
+
+          > .paragraphs-items {
+            > .field-name-field-paragraphs {
+              > .field-items {
+                margin: 0 -@paragraph-gutter-width/2;
+
+                > .field-item {
+                  display: inline-block;
+                  margin: 0 0 @paragraph-margin-bottom;
+                  padding: 0 @paragraph-gutter-width/2;
+                  width: 100%;
+                  vertical-align: top;
+
+                  @media @narrow {
+                    margin: 0 -2px @paragraph-margin-bottom;
+                    width: 50%;
+                  }
+
+                  @media @tablet {
+                    margin-bottom: @paragraph-margin-bottom-large;
+                    width: 33.3333333%;
+                  }
+
+                  @media @normal {
+                    width: 25%;
+                  }
+                  &:nth-child(5) {
+                    width: 100%;
+                  }
+
+                  // see paragraph-item-... less files
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+//
+// PAGE KONTAKT
+.page-node-75 {
+  .node.node-page.view-mode-full,
+  .node.node-page.view-mode-default {
+    > .row {
+      > div.col-sm-12 {
+
+        > .field-name-title {
+          h2 {
+            #pxl-mixins.title();
+          }
+        }
+
+        > .field-name-body {
+          margin: 0 0 80px;
+          #pxl-mixins.wysiwyg-body();
+        }
+
+        > .paragraphs-items {
+          > .field-name-field-paragraphs {
+            > .field-items {
+              margin: 0 -@paragraph-gutter-width/2;
+
+              > .field-item {
+                display: inline-block;
+                margin: 0 0 @paragraph-margin-bottom;
+                padding: 0 @paragraph-gutter-width/2;
+                width: 100%;
+                vertical-align: top;
+
+                @media @narrow {
+                  margin: 0 -2px @paragraph-margin-bottom;
+                  width: 50%;
+                }
+
+                @media @tablet {
+                  margin-bottom: @paragraph-margin-bottom-large;
+                  width: 33.3333333%;
+                }
+
+                @media @normal {
+                  width: 25%;
+                  &:nth-child(1) {
+                    width: 25%;
+                  }
+                  &:nth-child(2) {
+                    width: 25%;
+                  }
+                  &:nth-child(3) {
+                    width: 50%;
+                  }
+                }
+
+
+                // see paragraph-item-... less files
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+
+
+
+

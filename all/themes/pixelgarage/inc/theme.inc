@@ -6,6 +6,21 @@
  * Time: 17:22
  */
 
+
+/* =============================================================================
+ *      Language block theme
+ * ========================================================================== */
+
+function pixelgarage_links__locale_block(&$vars) {
+  foreach ($vars['links'] as $language => $langInfo) {
+    $abbr = $langInfo['language']->name;
+    $vars['links'][$language]['title'] = strtolower(substr($abbr, 0, 3));
+  }
+  $content = theme_links($vars);
+  return $content;
+}
+
+
 /* =============================================================================
  *      Image field carousel
  * ========================================================================== */
@@ -23,8 +38,7 @@ function pixelgarage_bootstrap_carousel_if($vars) {
 
     if ($vars['background']) {
       $files[] = '<div style="width: ' . check_plain($vars['width']) . '; height: ' . $vars['height'] . '; background-position: ' . $vars['background_pos'] . '; background-size: cover; background-image: url(' . $file_path . ');"></div>';
-    }
-    else {
+    } else {
       $type = ($vars['image_style']) ? 'image_style' : 'image';
       $file['style_name'] = ($vars['image_style']) ? $vars['image_style'] : '';
       $file['path'] = $file['uri'];
@@ -37,7 +51,7 @@ function pixelgarage_bootstrap_carousel_if($vars) {
   //
   // create carousel
   $output = '<div id="' . $vars['id'] . '" class="carousel carousel-fade slide" data-ride="carousel" data-interval="' . $vars['interval'] .
-    '" data-pause="' . $vars['pause'] . '" data-wrap="' . $vars['wrap'] .'" data-keyboard="' . $vars['keyboard'] . '">';
+    '" data-pause="' . $vars['pause'] . '" data-wrap="' . $vars['wrap'] . '" data-keyboard="' . $vars['keyboard'] . '">';
   $output .= '<div class="carousel-inner" role="listbox">';
   // Files/slides
   for ($i = 0; $i < $filecount; $i++) {
@@ -54,7 +68,7 @@ function pixelgarage_bootstrap_carousel_if($vars) {
 
   if ($vars['indicators'] && $filecount > 1) {
     $output .= '<!-- Indicators -->
-        <ol class="carousel-indicators" style="margin-bottom: ' . -($indicator_img_h+2) . '%">';
+        <ol class="carousel-indicators" style="margin-bottom: ' . -($indicator_img_h + 2) . '%">';
     for ($i = 0; $i < $filecount; $i++) {
       if (!$i) {
         $output .= '<li data-target="#' . $vars['id'] . '" data-slide-to="0" class="active" style="overflow: hidden; width: ' . $indicator_img_w . '%; height: 0; padding-bottom: ' . $indicator_img_h . '%"><img src="' . $indicators_img[$i] . '"></li>';

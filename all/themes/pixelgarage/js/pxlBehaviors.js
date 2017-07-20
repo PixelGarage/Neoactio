@@ -74,21 +74,49 @@
       // add random class to all items
       var doAgain = false;
       $rows.each(function(index) {
-        // add same random class again
-        if (doAgain) {
-          $(this).addClass('pe-item-width-50');
-          doAgain = false;
-          return;
+        if (index == 0) {
+          $(this).addClass('pe-item-width-55');
         }
+        else if (index == 1) {
+          $(this).addClass('pe-item-width-50');
+          doAgain = true;
+        }
+        else {
+          // add same random class again
+          if (doAgain) {
+            $(this).addClass('pe-item-width-50');
+            doAgain = false;
+            return;
+          }
 
-        // add random class
-        var rndmClass = randomClass();
+          // add random class
+          var rndmClass = randomClass();
 
-        doAgain = (rndmClass == 'pe-item-width-50');
-        $(this).addClass(rndmClass);
+          doAgain = (rndmClass == 'pe-item-width-50');
+          $(this).addClass(rndmClass);
+        }
       });
     }
-  }
+  };
+
+  Drupal.behaviors.toggleProjectDescription = {
+    attach: function(context, settings) {
+      var $nodeProjekt = $('.node-projekt.view-mode-full'),
+          $infoToggle = $nodeProjekt.find('.icon-info'),
+          $projektModal = $nodeProjekt.find('.projekt-modal');
+
+      $infoToggle.once('toggle', function() {
+        $infoToggle.on('click', function() {
+          if ($projektModal.hasClass('modal-visible')) {
+            $projektModal.removeClass('modal-visible');
+          }
+          else {
+            $projektModal.addClass('modal-visible');
+          }
+        });
+      });
+    }
+  };
 
   /**
    * Allows full size clickable items.

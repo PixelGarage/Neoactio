@@ -2362,12 +2362,17 @@
   src: url('../fonts/SohoGothicProBold/SohoGothicProBold.eot');
   src: url('../fonts/SohoGothicProBold/SohoGothicProBold.eot') format('embedded-opentype'), url('../fonts/SohoGothicProBold/SohoGothicProBold.woff2') format('woff2'), url('../fonts/SohoGothicProBold/SohoGothicProBold.woff') format('woff'), url('../fonts/SohoGothicProBold/SohoGothicProBold.ttf') format('truetype'), url('../fonts/SohoGothicProBold/SohoGothicProBold.svg#SohoGothicProBold') format('svg');
 }
+@font-face {
+  font-family: 'Butler-Bold';
+  src: url('../fonts/Butler-Bold/Butler-Bold.eot');
+  src: url('../fonts/Butler-Bold/Butler-Bold.eot') format('embedded-opentype'), url('../fonts/Butler-Bold/Butler-Bold.woff2') format('woff2'), url('../fonts/Butler-Bold/Butler-Bold.woff') format('woff'), url('../fonts/Butler-Bold/Butler-Bold.ttf') format('truetype'), url('../fonts/Butler-Bold/Butler-Bold.svg#Butler-Bold') format('svg');
+}
 /*
  *  Text mixins
  * --------------------------------------------------*/
 .pxl-title {
   margin: 20px auto;
-  font-family: 'SohoGothicProBold';
+  font-family: 'Butler-Bold';
   font-size: 22px;
   letter-spacing: 0.02em;
   line-height: 1.4em;
@@ -2390,7 +2395,7 @@
   }
 }
 .pxl-subtitle {
-  font-family: 'SohoGothicProBold';
+  font-family: 'Butler-Bold';
   font-size: 18px;
   letter-spacing: 0.02em;
   line-height: 1.2em;
@@ -2413,7 +2418,7 @@
   }
 }
 .pxl-normal {
-  font-family: 'SohoGothicProRegular';
+  font-family: 'Butler-Bold';
   font-size: 15px;
   letter-spacing: normal;
   line-height: 1.15em;
@@ -2460,7 +2465,7 @@
   }
 }
 .pxl-quote {
-  font-family: 'SohoGothicProBold';
+  font-family: 'Butler-Bold';
   font-size: 22px;
   letter-spacing: 0.02em;
   line-height: 1.4em;
