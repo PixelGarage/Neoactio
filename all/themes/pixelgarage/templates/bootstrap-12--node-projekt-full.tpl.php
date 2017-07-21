@@ -14,7 +14,10 @@ print $layout_attributes; ?> class="<?php print $classes; ?>">
   <<?php print $central_wrapper; ?> class="col-sm-12 <?php print $central_classes; ?>">
   <div class="projekt-header">
     <span class="toggle-descr"><img class="icon-info" src="<?php print $info_icon_path; ?>"/></span>
-    <span class="close-projekt"><img class="icon-close" src="<?php print $close_icon_path; ?>"/></span>
+    <a class="close-projekt" href="<?php print $previous_page_path; ?>"><img class="icon-close" src="<?php print $close_icon_path; ?>"/></a>
+  </div>
+  <div class="project-images">
+    <?php print render($content['projekt_images']); ?>
   </div>
   <div class="projekt-modal">
     <div class="projekt-title"><?php print render($content['title']); ?></div>

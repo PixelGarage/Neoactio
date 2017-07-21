@@ -51,22 +51,25 @@
 
   Drupal.behaviors.randomPeItemWidth = {
     attach: function (context, settings) {
-      var $view = $('.view.view-werk');
+      var $view = $('.view.view-werk').add('.view.view-projekt-images');
       if ($view.length <= 0) return;
 
-      var $rows = $view.find('.views-row'),
+      var $rows = $view.find('.pe-item'),
         randomClass = function () {
-          var classes = ['pe-item-width-66', 'pe-item-width-50', 'pe-item-width-100'],
+          var classes = ['pe-item-width-25', 'pe-item-width-66', 'pe-item-width-50', 'pe-item-width-100'],
             rand = Math.random() * 100;
 
-          if (rand >= 0 && rand < 33) {
+          if (rand >= 0 && rand < 25) {
             return classes[0];
           }
-          else if (rand >= 33 && rand < 66) {
+          else if (rand >= 25 && rand < 50) {
             return classes[1];
           }
-          else if (rand >= 66 && rand <= 100) {
+          else if (rand >= 50 && rand < 75) {
             return classes[2];
+          }
+          else if (rand >= 75 && rand <= 100) {
+            return classes[3];
           }
         };
 
@@ -102,7 +105,7 @@
   Drupal.behaviors.toggleProjectDescription = {
     attach: function(context, settings) {
       var $nodeProjekt = $('.node-projekt.view-mode-full'),
-          $infoToggle = $nodeProjekt.find('.icon-info'),
+          $infoToggle = $nodeProjekt.find('.toggle-descr'),
           $projektModal = $nodeProjekt.find('.projekt-modal');
 
       $infoToggle.once('toggle', function() {

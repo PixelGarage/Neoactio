@@ -12892,16 +12892,17 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.close-projekt,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.close-projekt {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
   position: absolute;
   top: 0;
   width: 30px;
+  z-index: 20;
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr img,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr img,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.close-projekt img,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.close-projekt img {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt img,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt img {
   display: block;
   overflow: hidden;
   margin: 0;
@@ -12912,21 +12913,49 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr {
   left: 0;
+  padding: 0 14px;
+  font-family: 'fontawesome';
+  font-size: 26px;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #000;
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.close-projekt,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.close-projekt {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr:before,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr:before {
+  content: '\f129';
+}
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr img,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr img {
+  display: none;
+}
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
   right: 0;
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 30px;
+  background-color: white;
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal.modal-visible,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal.modal-visible {
   display: block;
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2 {
   font-family: 'Butler-Bold';
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -12934,36 +12963,75 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   text-align: left;
 }
 @media screen and (min-width: 35.2em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2 {
     font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2 {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2 {
     font-size: 30px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-slogan,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-slogan,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-year,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-year {
+  margin: 0 0 10px;
+  font-family: 'Butler-Bold';
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  text-align: left;
+}
+@media screen and (min-width: 36em) {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-slogan,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-slogan,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-year,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-year {
+    font-size: 3.125vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-slogan,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-slogan,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-year,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-year {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-slogan,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-slogan,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-year,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-year {
+    font-size: 24px;
+  }
+}
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-year,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-year {
+  margin: 0 0 30px;
+}
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body {
   margin: 0 0 80px;
   color: #222;
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h2,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h2,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h3,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h3,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-title,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-title {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h1,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h1,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h2,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h2,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h3,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h3,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-title,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-title {
   margin: 10px auto 20px;
   font-family: 'Butler-Bold';
   font-size: 22px;
@@ -12972,49 +13040,49 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   text-align: left;
 }
 @media screen and (min-width: 35.2em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h2,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h2,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h3,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h3,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-title,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-title {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h1,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h1,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h2,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h2,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h3,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h3,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-title,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-title {
     font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h2,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h2,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h3,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h3,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-title,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-title {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h1,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h1,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h2,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h2,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h3,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h3,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-title,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-title {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h2,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h2,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h3,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h3,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-title,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-title {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h1,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h1,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h2,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h2,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h3,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h3,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-title,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-title {
     font-size: 30px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h4,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h4,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h5,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h5,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h6,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h6,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-subtitle,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h4,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h4,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h5,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h5,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h6,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h6,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-subtitle,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-subtitle {
   margin: 10px auto;
   font-family: 'Butler-Bold';
   font-size: 18px;
@@ -13023,43 +13091,43 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   text-align: left;
 }
 @media screen and (min-width: 36em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h4,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h4,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h5,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h5,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h6,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h6,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-subtitle,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h4,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h4,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h5,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h5,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h6,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h6,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-subtitle,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-subtitle {
     font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h4,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h4,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h5,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h5,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h6,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h6,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-subtitle,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h4,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h4,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h5,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h5,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h6,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h6,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-subtitle,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-subtitle {
     font-size: 24px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h4,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h4,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h5,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h5,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body h6,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body h6,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-subtitle,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h4,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h4,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h5,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h5,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h6,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body h6,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-subtitle,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-subtitle {
     font-size: 24px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body p {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body p,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body p {
   margin: 0 0 10px;
   font-family: 'Butler-Bold';
   font-size: 15px;
@@ -13068,25 +13136,25 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   text-align: left;
 }
 @media screen and (min-width: 42.35294117647059em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body p {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body p,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body p {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body p {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body p,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body p {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body p {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body p,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body p {
     font-size: 17px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-glow,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-glow {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-glow,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-glow {
   font-family: 'SohoGothicProLight';
   font-size: 50px;
   letter-spacing: 0.2em;
@@ -13096,25 +13164,25 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
 }
 @media screen and (min-width: 24em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-glow,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-glow {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-glow,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-glow {
     font-size: 13.02083333vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-glow,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-glow {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-glow,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-glow {
     font-size: 100px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-glow,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-glow {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-glow,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-glow {
     font-size: 100px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-quote,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-quote {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-quote,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-quote {
   font-family: 'Butler-Bold';
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -13123,25 +13191,25 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   text-align: center;
 }
 @media screen and (min-width: 35.2em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-quote,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-quote {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-quote,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-quote {
     font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-quote,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-quote {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-quote,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-quote {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-quote,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-quote {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-quote,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body .pxl-quote {
     font-size: 30px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body a {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a {
   font-family: 'Butler-Bold';
   font-size: 15px;
   letter-spacing: normal;
@@ -13150,39 +13218,39 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   color: #222;
 }
 @media screen and (min-width: 42.35294117647059em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body a {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body a {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body a {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a {
     font-size: 17px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body a:hover,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body a:hover,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body a:focus,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body a:focus {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a:hover,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a:hover,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a:focus,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body a:focus {
   color: #ff0000;
   text-decoration: none;
   background: none;
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body pre,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body pre,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body address,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body address,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body i,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body i,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body em,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body em {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body pre,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body pre,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body address,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body address,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body i,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body i,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body em,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body em {
   font-family: 'Butler-Bold';
   font-size: 15px;
   letter-spacing: normal;
@@ -13191,45 +13259,45 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'SohoGothicProRegular';
 }
 @media screen and (min-width: 42.35294117647059em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body pre,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body pre,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body address,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body address,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body i,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body i,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body em,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body em {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body pre,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body pre,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body address,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body address,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body i,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body i,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body em,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body em {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body pre,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body pre,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body address,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body address,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body i,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body i,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body em,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body em {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body pre,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body pre,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body address,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body address,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body i,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body i,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body em,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body em {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body pre,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body pre,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body address,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body address,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body i,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body i,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body em,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body em {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body pre,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body pre,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body address,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body address,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body i,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body i,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body em,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body em {
     font-size: 17px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body strong,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body b,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body b {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body strong,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body strong,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body b,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body b {
   font-family: 'Butler-Bold';
   font-size: 15px;
   letter-spacing: normal;
@@ -13238,31 +13306,31 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'SohoGothicProBold';
 }
 @media screen and (min-width: 42.35294117647059em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body strong,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body b,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body b {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body strong,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body strong,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body b,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body b {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body strong,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body b,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body b {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body strong,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body strong,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body b,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body b {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body strong,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body b,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body b {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body strong,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body strong,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body b,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body b {
     font-size: 17px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body u,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body u {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u {
   font-family: 'Butler-Bold';
   font-size: 15px;
   letter-spacing: normal;
@@ -13271,31 +13339,31 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   color: #222;
 }
 @media screen and (min-width: 42.35294117647059em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body u,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body u {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body u,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body u {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body u,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body u {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u {
     font-size: 17px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body u:hover,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body u:hover,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body u:focus,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body u:focus {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u:hover,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u:hover,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u:focus,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body u:focus {
   color: #000000;
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body mark,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body mark {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body mark,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body mark {
   font-family: 'Butler-Bold';
   font-size: 15px;
   letter-spacing: normal;
@@ -13304,31 +13372,31 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   background-color: #ff0;
 }
 @media screen and (min-width: 42.35294117647059em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body mark,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body mark {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body mark,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body mark {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body mark,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body mark {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body mark,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body mark {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body mark,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body mark {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body mark,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body mark {
     font-size: 17px;
   }
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body hr,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body hr {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body hr,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body hr {
   border: 0;
   border-bottom: 2px solid #ff0000;
   background: none;
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body img,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body img {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body img,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body img {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -13336,14 +13404,14 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   max-width: 100%;
   height: auto;
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body embed,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body embed,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body video,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body video,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body audio,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body audio,
-.node.node-projekt.view-mode-full > .row > div.col-sm-12 > .field-name-body iframe,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 > .field-name-body iframe {
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body embed,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body embed,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body video,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body video,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body audio,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body audio,
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body iframe,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-body .field-name-body iframe {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -16787,6 +16855,10 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 30em) {
   .view.view-werk .view-content .grid-sizer,
+  .view.view-werk .view-content .pe-item.pe-item-width-25 {
+    width: 23.5%;
+  }
+  .view.view-werk .view-content .grid-sizer,
   .view.view-werk .view-content .pe-item.pe-item-width-50 {
     width: 48.5%;
   }
@@ -16822,6 +16894,270 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 .view.view-werk .pager.pager--infinite-scroll .pager__item a:hover,
 .view.view-werk .pager.pager--infinite-scroll .pager__item a.active {
+  color: #000;
+  background: none;
+}
+/*
+ *  View projekt images component
+ * --------------------------------------------------*/
+.view.view-projekt-images {
+  width: 100%;
+}
+.view.view-projekt-images .view-content {
+  padding: 0;
+}
+.view.view-projekt-images .view-content > .pe-container .grid-sizer,
+.view.view-projekt-images .view-content > .pe-container .pe-item {
+  width: 100%;
+}
+.view.view-projekt-images .view-content > .pe-container .gutter-sizer {
+  width: 0;
+}
+@media screen and (min-width: 30em) {
+  .view.view-projekt-images .view-content > .pe-container .grid-sizer,
+  .view.view-projekt-images .view-content > .pe-container .pe-item {
+    width: 48.5%;
+  }
+  .view.view-projekt-images .view-content > .pe-container .gutter-sizer {
+    width: 3%;
+  }
+}
+.view.view-projekt-images .view-content > .pe-container .pe-item {
+  display: inline-block;
+  overflow: visible;
+  margin: 0 0 6% !important;
+  opacity: 1.0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+@media screen and (min-width: 30em) {
+  .view.view-projekt-images .view-content > .pe-container .pe-item {
+    margin: 0 0 3% !important;
+  }
+}
+.view.view-projekt-images .view-content > .pe-container .pe-item.shown {
+  opacity: 1.0;
+}
+.view.view-projekt-images .view-content > .pe-container .pe-item.pe-item-ajax,
+.view.view-projekt-images .view-content > .pe-container .pe-item.pe-item-no-ajax,
+.view.view-projekt-images .view-content > .pe-container .pe-item.pe-item-linked {
+  cursor: pointer;
+}
+.view.view-projekt-images .view-content > .pe-container .modal {
+  background-color: #ff0000;
+}
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height {
+  height: 100%;
+  overflow: hidden;
+}
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog {
+  height: 100%;
+}
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content {
+  height: 100%;
+}
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header,
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer {
+  position: relative;
+}
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading,
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading {
+  display: block;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  height: 1px;
+  z-index: 10;
+}
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading.body-fading-top,
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading.body-fading-top {
+  bottom: -1px;
+  background-image: -webkit-linear-gradient(top, #aaa 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(top, #aaa 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to bottom, #aaa 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaaaaaa', endColorstr='#00000000', GradientType=0);
+}
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading.body-fading-bottom,
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading.body-fading-bottom {
+  top: -1px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaa 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaa 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #aaa 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ffaaaaaa', GradientType=0);
+}
+.view.view-projekt-images .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-body {
+  overflow-y: auto;
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog {
+  margin: 0 auto;
+  width: 100%;
+}
+.admin-menu .view.view-projekt-images .view-content > .pe-container .modal .modal-dialog {
+  margin: 29px auto 0;
+}
+@media screen and (min-width: 30em) {
+  .view.view-projekt-images .view-content > .pe-container .modal .modal-dialog {
+    min-width: 480px;
+    max-width: 690px;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 48em) {
+  .view.view-projekt-images .view-content > .pe-container .modal .modal-dialog {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .view.view-projekt-images .view-content > .pe-container .modal .modal-dialog {
+    width: 800px;
+  }
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content {
+  position: relative;
+  padding: 0;
+  background: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header {
+  padding: 0;
+  min-height: 60px;
+  border: none;
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
+  font-family: 'Butler-Bold';
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  line-height: 1.4em;
+  text-align: left;
+}
+@media screen and (min-width: 35.2em) {
+  .view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
+    font-size: 3.90625vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
+    font-size: 30px;
+  }
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header button.close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  opacity: 1.0;
+  z-index: 1;
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header button.close span {
+  padding: 0;
+  font-family: 'SohoGothicProLight';
+  font-size: 60px;
+  font-weight: normal;
+  color: #222;
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header .body-fading {
+  display: none;
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-body {
+  padding: 20px 15px 30px;
+}
+@media screen and (min-width: 30em) {
+  .view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-body {
+    padding-bottom: 50px;
+  }
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer {
+  display: none;
+  padding: 10px 0;
+  border: none;
+  text-align: center;
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .btn {
+  display: inline-block;
+  font-family: 'SohoGothicProBold';
+  color: #fff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 8px solid #222;
+  background-color: #ff0000;
+  -webkit-box-shadow: 0 0 4px rgba(100, 100, 100, 0.4);
+  box-shadow: 0 0 4px rgba(100, 100, 100, 0.4);
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .btn:hover {
+  color: #ff0000;
+  background-color: #fff;
+}
+.view.view-projekt-images .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .body-fading {
+  display: none;
+}
+.view.view-projekt-images .view-content > .pe-container #proximity-ajax-loader {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.view.view-projekt-images .view-content > .pe-container #proximity-ajax-loader img {
+  display: inline-block;
+  max-height: 15px;
+}
+@media screen and (min-width: 30em) {
+  .view.view-projekt-images .view-content .grid-sizer,
+  .view.view-projekt-images .view-content .pe-item.pe-item-width-25 {
+    width: 23.5%;
+  }
+  .view.view-projekt-images .view-content .grid-sizer,
+  .view.view-projekt-images .view-content .pe-item.pe-item-width-50 {
+    width: 48.5%;
+  }
+  .view.view-projekt-images .view-content .grid-sizer,
+  .view.view-projekt-images .view-content .pe-item.pe-item-width-55 {
+    width: 55%;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+  }
+  .view.view-projekt-images .view-content .grid-sizer,
+  .view.view-projekt-images .view-content .pe-item.pe-item-width-66 {
+    width: 66.66667%;
+  }
+  .view.view-projekt-images .view-content .grid-sizer,
+  .view.view-projekt-images .view-content .pe-item.pe-item-width-100 {
+    width: 100%;
+  }
+}
+.view.view-projekt-images .pager.pager--infinite-scroll .pager__item a {
+  display: inline-block;
+  padding: 8px 20px 10px;
+  font-family: 'Butler-Bold';
+  font-size: 16px;
+  line-height: 1;
+  color: #222;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #222;
+  background: none;
+}
+.view.view-projekt-images .pager.pager--infinite-scroll .pager__item a:hover,
+.view.view-projekt-images .pager.pager--infinite-scroll .pager__item a.active {
   color: #000;
   background: none;
 }
