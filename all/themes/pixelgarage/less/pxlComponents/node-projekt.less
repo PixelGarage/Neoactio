@@ -63,6 +63,9 @@
         }
 
       }
+      .project-video{
+        text-align: center;
+      }
 
       .projekt-modal {
         display: none;
@@ -75,8 +78,11 @@
 
         &.modal-visible {
           display: block;
+          width: 55%;
+          @media @mobile{
+            width: 100%;
+          }
         }
-
         .projekt-title {
           .field-name-title {
             h2 {
@@ -99,7 +105,6 @@
           }
         }
       }
-
     }
   }
 }

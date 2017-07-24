@@ -12937,6 +12937,10 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
   right: 0;
 }
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .project-video,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .project-video {
+  text-align: center;
+}
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal {
   display: none;
@@ -12953,6 +12957,13 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal.modal-visible,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal.modal-visible {
   display: block;
+  width: 55%;
+}
+@media screen and (max-width: 29.9375em) {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal.modal-visible,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal.modal-visible {
+    width: 100%;
+  }
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-modal .projekt-title .field-name-title h2 {

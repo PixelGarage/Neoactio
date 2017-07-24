@@ -19,6 +19,9 @@ print $layout_attributes; ?> class="<?php print $classes; ?>">
   <div class="project-images">
     <?php print render($content['projekt_images']); ?>
   </div>
+  <div class="project-video">
+    <?php print render($content['field_video']); ?>
+  </div>
   <div class="projekt-modal">
     <div class="projekt-title"><?php print render($content['title']); ?></div>
     <div class="projekt-slogan"><?php print $slogan; ?></div>
