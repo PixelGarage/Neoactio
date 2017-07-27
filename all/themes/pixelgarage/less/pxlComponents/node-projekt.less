@@ -25,9 +25,12 @@
         span.toggle-descr,
         a.close-projekt {
           position: absolute;
-          top: 0;
+          top: -42px;
           width: 30px;
           z-index: 20;
+          @media @narrow{
+            top: 0;
+          }
 
           img {
             display: block;

@@ -12895,9 +12895,17 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
   position: absolute;
-  top: 0;
+  top: -42px;
   width: 30px;
   z-index: 20;
+}
+@media screen and (min-width: 30em) {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr,
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
+    top: 0;
+  }
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr img,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr img,
