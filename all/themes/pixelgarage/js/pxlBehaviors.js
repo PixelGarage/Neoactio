@@ -9,7 +9,6 @@
   /**
    * This behavior adds shadow to header on scroll.
    *
-   */
   Drupal.behaviors.addHeaderShadow = {
     attach: function (context) {
       $(window).on("scroll", function () {
@@ -20,6 +19,35 @@
           $("header.navbar .container").css("box-shadow", "none");
         }
       });
+    }
+  };
+*/
+
+  /**
+   * This behavior adds the scrolling for the scroll button.
+   *
+   */
+  Drupal.behaviors.scrollButtonAction = {
+    attach: function (context) {
+      var $scrollButton = $('#front-scroll-button'),
+          $items = $('.view-werk .pe-item');
+
+      $scrollButton.once('click', function() {
+        $(this).on('click', function() {
+          var scrollPos = $(document).scrollTop();
+
+          $items.each(function (index) {
+            var $this = $(this),
+                top = $this.offset().top - 100;
+
+            if (top > scrollPos) {
+              $(document).scrollTop(top);
+              return false;
+            }
+          });
+        });
+      });
+
     }
   };
 

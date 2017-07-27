@@ -119,8 +119,13 @@
 </header>
 
 <div class="main-container">
-  <div class="fading fading-top"></div>
-  <div class="fading fading-bottom"></div>
+  <?php if ($is_front): ?>
+    <div id="front-scroll-button"><span class="fa fa-angle-down"></span></div>
+  <?php endif; ?>
+  <?php if ($is_project_page): ?>
+    <div class="projekt projekt-prev"><?php if (isset($prev_project_url)) print $prev_project_url; ?></div>
+    <div class="projekt projekt-next"><?php if (isset($next_project_url)) print $next_project_url; ?></div>
+  <?php endif; ?>
   <div class="<?php print $container_class; ?>">
     <header role="banner" id="page-header">
         <?php if (!empty($site_slogan)): ?>

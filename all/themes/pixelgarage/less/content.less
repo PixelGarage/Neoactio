@@ -50,6 +50,41 @@ body {
     padding-bottom: @pxl-footer-height;
     height: 100%;
 
+    //
+    // scroll button
+    #front-scroll-button {
+      position: fixed;
+      #pxl-mixins.center-horizontally();
+      bottom: 10px;
+      z-index: 1200;
+
+      span.fa {
+        font-size: 50px;
+        color: @pxl-color-black;
+        text-shadow: -1px 0px 1px #fff, 1px 0px 1px #fff, 0 0 6px #fff;
+      }
+    }
+
+    //
+    // project buttons
+    .projekt {
+      #pxl-mixins.center-vertically(fixed);
+      z-index: 1200;
+
+      a {
+        padding: 10px;
+      }
+
+      &.projekt-prev {
+        left: 0;
+        .rotate(-90deg);
+      }
+      &.projekt-next {
+        right: 0;
+        .rotate(-90deg);
+      }
+    }
+
     .container, .container-fluid {
       //
       // Page header

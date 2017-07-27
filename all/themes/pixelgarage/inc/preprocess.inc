@@ -24,6 +24,47 @@ function pixelgarage_preprocess_page(&$vars) {
   pg_login_preprocess_page($vars);
 
   //$vars['logo'] = str_replace(array('.jpg', '.png'), '.svg', $vars['logo']);
+
+  $vars['is_project_page'] = false;
+  if (isset($vars['node']) && $node = $vars['node'] && $vars['node']->type == 'projekt') {
+    $vars['is_project_page'] = true;
+
+    // get random projects and define urls
+    $random_projects = _get_random_projects();
+    $random_text = _get_random_text();
+    $vars['prev_project_url'] = l($random_text[0], 'node/' . $random_projects[0], array('attributes' => array('rel' => array('prev'), 'class' => array('prev-project'))));
+    $vars['next_project_url'] = l($random_text[1], 'node/' . $random_projects[1], array('attributes' => array('rel' => array('prev'), 'class' => array('next-project'))));
+  }
+}
+
+function _get_random_projects() {
+  $random_projects = array();
+
+  //
+  // get two projekt nodes randomly
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'projekt');
+  $result = $query->execute();
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $count =  count($nids) - 1;
+
+    $rand1 = mt_rand(0, $count);
+    $rand2 = mt_rand(0, $count);
+    $random_projects[0] = $nids[$rand1];
+    $random_projects[1] = $nids[$rand2];
+  }
+  return $random_projects;
+}
+
+function _get_random_text() {
+  $texts = array(t('yeahhh'), t('Whats next?'), t('Nicht klicken'), t('Was los?'));
+  $count = count($texts) - 1;
+  $rand1 = mt_rand(0, $count);
+  $rand2 = mt_rand(0, $count);
+
+  return array($texts[$rand1], $texts[$rand2]);
 }
 
 
