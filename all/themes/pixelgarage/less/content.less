@@ -70,6 +70,7 @@ body {
     .projekt {
       #pxl-mixins.center-vertically(fixed);
       z-index: 1200;
+      display: none;
 
       a {
         padding: 10px;
@@ -82,6 +83,9 @@ body {
       &.projekt-next {
         right: 0;
         .rotate(-90deg);
+      }
+      @media @narrow{
+        display: block;
       }
     }
 
