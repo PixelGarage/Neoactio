@@ -32,13 +32,6 @@ if (typeof(CKEDITOR) !== 'undefined') {
           'class': 'pxl-subtitle'
         }
       },
-      {
-        name: 'Glow',
-        element: 'p',
-        attributes: {
-          'class': 'pxl-glow'
-        }
-      },
 
       /* Block Styles */
 

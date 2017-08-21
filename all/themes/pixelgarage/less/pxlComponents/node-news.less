@@ -13,22 +13,27 @@
 
 // General settings
 // -------------------------
-.node.node-profil.view-mode-full,
-.node.node-profil.view-mode-default {
+.node.node-article.view-mode-full,
+.node.node-article.view-mode-default {
   >.row {
     >div.col-sm-12 {
-
+      max-width: 800px;
+      display: block;
+      float: none;
+      margin: 0 auto;
       >.field-name-title {
         h2 {
           #pxl-mixins.title();
-          color: #ff0000;
           padding-bottom: 20px;
+          text-align: center;
         }
       }
 
       >.field-name-body {
         margin: 0 0 80px;
-        #pxl-mixins.wysiwyg-body();
+        #pxl-mixins.text();
+
+
       }
     }
   }

@@ -17,7 +17,6 @@
       <div class="projekt-hover">
           <div class="projekt-title"><?php print render($content['title']); ?></div>
           <div class="projekt-slogan"><?php print $slogan; ?></div>
-          <div class="projekt-year"><?php print $year; ?></div>
       </div>
     </<?php print $central_wrapper; ?>>
   </div>

@@ -5,7 +5,7 @@
 // Variables
 // -------------------------
 @header-font-size-min: 25px;
-@header-font-size: 35px;
+@header-font-size: 40px;
 
 // Mixins
 // -------------------------
@@ -77,6 +77,13 @@ body.navbar-is-fixed-top {
     padding-top: 110px !important;
   }
 
+  &.node-type-projekt, &.page-node-74 {
+    padding-top: 0 !important;
+    header#navbar {
+      display: none;
+    }
+  }
+
 }
 
 header#navbar {
@@ -90,20 +97,24 @@ header#navbar {
     .navbar-header {
       // header (branding)
       a.logo {
-        display:none;
+        display:block;
+        position: absolute;
+        left: 40px;
+        top: 35px;
         vertical-align: middle;
         float: none;
+        margin: 0;
 
         img {
           display: inline-block;
           vertical-align: middle;
-          max-height: 250px;
-          width: 250px;
+          height: 38px;
+          width: auto;
         }
       }
 
       a.navbar-brand {
-        display: inline-block;
+        display: none;
         vertical-align: top;
         float: none;
         margin-left: @grid-gutter-width/2;
@@ -128,16 +139,27 @@ header#navbar {
         vertical-align: middle;
         margin-left: 30px;
         font-size: 13px;
-
-        #node-84,#node-78{
-          // Header text block
-          display: none;
-          @media @normal{
-            display: block;
+        li{
+          display: block;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        #block-locale-language{
+          right: 40px;
+          top: 32px;
+          .active{
+            display: none;
+          }
+          a{
+            color: @pxl-color-black;
+            font-size: 20px;
           }
         }
       }
-    }
+
+
+      }
     // collapse part
     .navbar-collapse {
       // main menu
@@ -147,7 +169,7 @@ header#navbar {
         ul.navbar-nav {
           display: block;
           float: none;
-          margin: 30px 0;
+          margin: 40px 0;
 
           li {
             //height: 40px;
@@ -156,17 +178,17 @@ header#navbar {
             padding: 10px 0;
 
             a {
-              padding: 0;
-              font-family: @pxl-text-font;
-              font-size: @header-font-size-min;
+              margin-top: 10px;
+              padding: 8px 8px 0;
+              #pxl-mixins.subtitle();
               color: @link-color;
-              line-height: 1;
-              letter-spacing: 0.2em;
+              border: 2px solid rgba(0,0,0,0.0);
+
               &:hover,
               &.active {
-                  color: @link-color-hover;
+                  border: 2px solid @link-color;
                   text-decoration: @link-decoration-hover;
-                  background: none;
+                  background-color: #fff;
               }
 
               @media @normal {
@@ -177,13 +199,11 @@ header#navbar {
         }
 
         @media @tablet {
-          margin-left: 30%;
-
           ul.navbar-nav {
-            display: flex;
-            justify-content: space-around;
+            display: block;
+            text-align: center;
+            //justify-content: space-around;
             margin: 0;
-
             li {
               display: inline-block;
               padding: 0;

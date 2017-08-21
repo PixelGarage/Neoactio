@@ -77,8 +77,8 @@
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
         <?php if ($logo): ?>
-          <a class="logo navbar-btn" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+          <a class="logo navbar-btn" href="node/74" title="<?php print t('Neoactio'); ?>">
+            <img src="<?php print $logo; ?>" alt="<?php print t('Neoactio'); ?>"/>
           </a>
         <?php endif; ?>
 
@@ -119,9 +119,6 @@
 </header>
 
 <div class="main-container">
-  <?php if ($is_front): ?>
-    <div id="front-scroll-button"><span class="fa fa-angle-down"></span></div>
-  <?php endif; ?>
   <?php if ($is_project_page): ?>
     <div class="projekt projekt-prev"><?php if (isset($prev_project_url)) print $prev_project_url; ?></div>
     <div class="projekt projekt-next"><?php if (isset($next_project_url)) print $next_project_url; ?></div>

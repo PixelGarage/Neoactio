@@ -23,33 +23,6 @@
   };
 */
 
-  /**
-   * This behavior adds the scrolling for the scroll button.
-   *
-   */
-  Drupal.behaviors.scrollButtonAction = {
-    attach: function (context) {
-      var $scrollButton = $('#front-scroll-button'),
-          $items = $('.view-werk .pe-item');
-
-      $scrollButton.once('click', function() {
-        $(this).on('click', function() {
-          var scrollPos = $(document).scrollTop();
-
-          $items.each(function (index) {
-            var $this = $(this),
-                top = $this.offset().top - 100;
-
-            if (top > scrollPos) {
-              $(document).scrollTop(top);
-              return false;
-            }
-          });
-        });
-      });
-
-    }
-  };
 
   /**
    * Anchor menus: Scrolls smoothly to anchor due to menu click.

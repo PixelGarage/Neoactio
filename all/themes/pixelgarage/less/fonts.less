@@ -25,15 +25,17 @@
 @pxl-title-font: 'Butler-Bold';
 @pxl-subtitle-font: 'Butler-Bold';
 
+// main font
+@pxl-text-main:'Butler-Bold';
 // text fonts
-@pxl-text-font: 'Butler-Bold';
-@pxl-text-font-light: 'SohoGothicProLight';
+@pxl-text-font: 'Butler-Regular';
+@pxl-text-font-light: 'Butler-Regular';
 @pxl-text-font-medium: @pxl-text-font;
-@pxl-text-font-bold: 'SohoGothicProBold';
-@pxl-text-font-italic: 'SohoGothicProRegular';
-@pxl-text-font-light-italic: 'SohoGothicProLight';
+@pxl-text-font-bold: 'Butler-Regular';
+@pxl-text-font-italic: 'Butler-Regular';
+@pxl-text-font-light-italic: 'Butler-Regular';
 @pxl-text-font-medium-italic: @pxl-text-font;
-@pxl-text-font-bold-italic: 'SohoGothicProBold';
+@pxl-text-font-bold-italic: 'Butler-Regular';
 
 // form font
 @pxl-form-font: @pxl-text-font;
@@ -48,33 +50,6 @@
 //
 // font faces
 //
-@font-face {
-  font-family: 'SohoGothicProRegular';
-  src: url('@{pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.eot');
-  src: url('@{pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.eot') format('embedded-opentype'),
-  url('@{pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff2') format('woff2'),
-  url('@{pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff') format('woff'),
-  url('@{pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.ttf') format('truetype'),
-  url('@{pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.svg#SohoGothicProRegular') format('svg');
-}
-@font-face {
-  font-family: 'SohoGothicProLight';
-  src: url('@{pxl-font-path}/SohoGothicProLight/SohoGothicProLight.eot');
-  src: url('@{pxl-font-path}/SohoGothicProLight/SohoGothicProLight.eot') format('embedded-opentype'),
-  url('@{pxl-font-path}/SohoGothicProLight/SohoGothicProLight.woff2') format('woff2'),
-  url('@{pxl-font-path}/SohoGothicProLight/SohoGothicProLight.woff') format('woff'),
-  url('@{pxl-font-path}/SohoGothicProLight/SohoGothicProLight.ttf') format('truetype'),
-  url('@{pxl-font-path}/SohoGothicProLight/SohoGothicProLight.svg#SohoGothicProLight') format('svg');
-}
-@font-face {
-  font-family: 'SohoGothicProBold';
-  src: url('@{pxl-font-path}/SohoGothicProBold/SohoGothicProBold.eot');
-  src: url('@{pxl-font-path}/SohoGothicProBold/SohoGothicProBold.eot') format('embedded-opentype'),
-  url('@{pxl-font-path}/SohoGothicProBold/SohoGothicProBold.woff2') format('woff2'),
-  url('@{pxl-font-path}/SohoGothicProBold/SohoGothicProBold.woff') format('woff'),
-  url('@{pxl-font-path}/SohoGothicProBold/SohoGothicProBold.ttf') format('truetype'),
-  url('@{pxl-font-path}/SohoGothicProBold/SohoGothicProBold.svg#SohoGothicProBold') format('svg');
-}
 
   @font-face {
     font-family: 'Butler-Bold';
@@ -85,3 +60,13 @@
     url('@{pxl-font-path}/Butler-Bold/Butler-Bold.ttf') format('truetype'),
     url('@{pxl-font-path}/Butler-Bold/Butler-Bold.svg#Butler-Bold') format('svg');
   }
+
+@font-face {
+  font-family: 'Butler-Regular';
+  src: url('@{pxl-font-path}/Butler-Regular/Butler-Regular.eot');
+  src: url('@{pxl-font-path}/Butler-Regular/Butler-Regular.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/Butler-Regular/Butler-Regular.woff2') format('woff2'),
+  url('@{pxl-font-path}/Butler-Regular/Butler-Regular.woff') format('woff'),
+  url('@{pxl-font-path}/Butler-Regular/Butler-Regular.ttf') format('truetype'),
+  url('@{pxl-font-path}/Butler-Regular/Butler-Regular.svg#Butler-Regular') format('svg');
+}

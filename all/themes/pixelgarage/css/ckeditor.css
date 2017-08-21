@@ -2348,24 +2348,14 @@
   clip: auto;
 }
 @font-face {
-  font-family: 'SohoGothicProRegular';
-  src: url('../fonts/SohoGothicProRegular/SohoGothicProRegular.eot');
-  src: url('../fonts/SohoGothicProRegular/SohoGothicProRegular.eot') format('embedded-opentype'), url('../fonts/SohoGothicProRegular/SohoGothicProRegular.woff2') format('woff2'), url('../fonts/SohoGothicProRegular/SohoGothicProRegular.woff') format('woff'), url('../fonts/SohoGothicProRegular/SohoGothicProRegular.ttf') format('truetype'), url('../fonts/SohoGothicProRegular/SohoGothicProRegular.svg#SohoGothicProRegular') format('svg');
-}
-@font-face {
-  font-family: 'SohoGothicProLight';
-  src: url('../fonts/SohoGothicProLight/SohoGothicProLight.eot');
-  src: url('../fonts/SohoGothicProLight/SohoGothicProLight.eot') format('embedded-opentype'), url('../fonts/SohoGothicProLight/SohoGothicProLight.woff2') format('woff2'), url('../fonts/SohoGothicProLight/SohoGothicProLight.woff') format('woff'), url('../fonts/SohoGothicProLight/SohoGothicProLight.ttf') format('truetype'), url('../fonts/SohoGothicProLight/SohoGothicProLight.svg#SohoGothicProLight') format('svg');
-}
-@font-face {
-  font-family: 'SohoGothicProBold';
-  src: url('../fonts/SohoGothicProBold/SohoGothicProBold.eot');
-  src: url('../fonts/SohoGothicProBold/SohoGothicProBold.eot') format('embedded-opentype'), url('../fonts/SohoGothicProBold/SohoGothicProBold.woff2') format('woff2'), url('../fonts/SohoGothicProBold/SohoGothicProBold.woff') format('woff'), url('../fonts/SohoGothicProBold/SohoGothicProBold.ttf') format('truetype'), url('../fonts/SohoGothicProBold/SohoGothicProBold.svg#SohoGothicProBold') format('svg');
-}
-@font-face {
   font-family: 'Butler-Bold';
   src: url('../fonts/Butler-Bold/Butler-Bold.eot');
   src: url('../fonts/Butler-Bold/Butler-Bold.eot') format('embedded-opentype'), url('../fonts/Butler-Bold/Butler-Bold.woff2') format('woff2'), url('../fonts/Butler-Bold/Butler-Bold.woff') format('woff'), url('../fonts/Butler-Bold/Butler-Bold.ttf') format('truetype'), url('../fonts/Butler-Bold/Butler-Bold.svg#Butler-Bold') format('svg');
+}
+@font-face {
+  font-family: 'Butler-Regular';
+  src: url('../fonts/Butler-Regular/Butler-Regular.eot');
+  src: url('../fonts/Butler-Regular/Butler-Regular.eot') format('embedded-opentype'), url('../fonts/Butler-Regular/Butler-Regular.woff2') format('woff2'), url('../fonts/Butler-Regular/Butler-Regular.woff') format('woff'), url('../fonts/Butler-Regular/Butler-Regular.ttf') format('truetype'), url('../fonts/Butler-Regular/Butler-Regular.svg#Butler-Regular') format('svg');
 }
 /*
  *  Text mixins
@@ -2373,118 +2363,117 @@
 .pxl-title {
   margin: 20px auto;
   font-family: 'Butler-Bold';
-  font-size: 22px;
-  letter-spacing: 0.02em;
-  line-height: 1.4em;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 66px;
   text-align: left;
   color: #000;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 48em) {
   .pxl-title {
-    font-size: 3.90625vw;
+    font-size: 7.8125vw;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-title {
-    font-size: 30px;
+    font-size: 60px;
   }
 }
 @media screen and (min-width: 64em) {
   .pxl-title {
-    font-size: 30px;
+    font-size: 60px;
   }
 }
 .pxl-subtitle {
   font-family: 'Butler-Bold';
-  font-size: 18px;
-  letter-spacing: 0.02em;
-  line-height: 1.2em;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 1;
   text-align: left;
   color: #000;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 48em) {
   .pxl-subtitle {
-    font-size: 3.125vw;
+    font-size: 5.20833333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-subtitle {
-    font-size: 24px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 64em) {
   .pxl-subtitle {
-    font-size: 24px;
+    font-size: 40px;
   }
 }
 .pxl-normal {
-  font-family: 'Butler-Bold';
-  font-size: 15px;
+  font-family: 'Butler-Regular';
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: left;
+  color: #000;
+}
+@media screen and (min-width: 48em) {
+  .pxl-normal {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-normal {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pxl-normal {
+    font-size: 20px;
+  }
+}
+.pxl-subtext {
+  font-family: 'Butler-Regular';
+  font-size: 14px;
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
   color: #000;
 }
-@media screen and (min-width: 42.35294117647059em) {
-  .pxl-normal {
-    font-size: 2.21354167vw;
+@media screen and (min-width: 48em) {
+  .pxl-subtext {
+    font-size: 1.82291667vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .pxl-normal {
-    font-size: 17px;
+  .pxl-subtext {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 64em) {
-  .pxl-normal {
-    font-size: 17px;
-  }
-}
-.pxl-glow {
-  font-family: 'SohoGothicProLight';
-  font-size: 50px;
-  letter-spacing: 0.2em;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
-}
-@media screen and (min-width: 24em) {
-  .pxl-glow {
-    font-size: 13.02083333vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  .pxl-glow {
-    font-size: 100px;
-  }
-}
-@media screen and (min-width: 64em) {
-  .pxl-glow {
-    font-size: 100px;
+  .pxl-subtext {
+    font-size: 14px;
   }
 }
 .pxl-quote {
   font-family: 'Butler-Bold';
-  font-size: 22px;
-  letter-spacing: 0.02em;
-  line-height: 1.4em;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 66px;
   text-align: left;
   text-align: center;
   color: #000;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 48em) {
   .pxl-quote {
-    font-size: 3.90625vw;
+    font-size: 7.8125vw;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-quote {
-    font-size: 30px;
+    font-size: 60px;
   }
 }
 @media screen and (min-width: 64em) {
   .pxl-quote {
-    font-size: 30px;
+    font-size: 60px;
   }
 }

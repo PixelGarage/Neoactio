@@ -4,7 +4,7 @@
 
 // Variables
 // -------------------------
-@paragraph-gutter-width: 30px;
+@paragraph-gutter-width: 20px;
 
 // Mixins
 // -------------------------
@@ -27,16 +27,6 @@
       >.field-name-body {
         margin: 0 0 80px;
         #pxl-mixins.wysiwyg-body();
-
-        @media @narrow{
-          .content-columns(2);
-        }
-        @media @tablet{
-          .content-columns(2);
-        }
-        @media @normal{
-          .content-columns(3);
-        }
 
       }
 
@@ -115,22 +105,23 @@
 
 
 //
-// PAGE KONTAKT
-.page-node-75 {
+// PAGE ABOUT
+.page-node-74 {
   .node.node-page.view-mode-full,
   .node.node-page.view-mode-default {
     > .row {
       > div.col-sm-12 {
+        text-align: center;
 
         > .field-name-title {
           h2 {
-            #pxl-mixins.title();
+            #pxl-mixins.subtext();
           }
         }
 
         > .field-name-body {
           margin: 0 0 80px;
-          #pxl-mixins.wysiwyg-body();
+          #pxl-mixins.subtext();
         }
 
         > .paragraphs-items {
@@ -142,10 +133,22 @@
                 display: inline-block;
                 margin: 0 0 @paragraph-margin-bottom;
                 padding: 0 @paragraph-gutter-width/2;
-                width: 100%;
+                width: 70%;
+                #pxl-mixins.subtext();
                 vertical-align: top;
+                &:nth-child(2){
+                  width: 200px;
+                  text-align: left;
+                  padding: 0 10px;
+                  #pxl-mixins.subtext();
 
-                @media @narrow {
+                  a{
+                    text-decoration: underline;
+                  }
+                }
+
+
+                /**@media @narrow {
                   margin: 0 -2px @paragraph-margin-bottom;
                   width: 50%;
                 }
@@ -153,9 +156,9 @@
                 @media @tablet {
                   margin-bottom: @paragraph-margin-bottom-large;
                   width: 33.3333333%;
-                }
+                }**/
 
-                @media @normal {
+               /** @media @normal {
                   width: 25%;
                   &:nth-child(1) {
                     width: 25%;
@@ -166,7 +169,7 @@
                   &:nth-child(3) {
                     width: 50%;
                   }
-                }
+                }**/
 
 
                 // see paragraph-item-... less files

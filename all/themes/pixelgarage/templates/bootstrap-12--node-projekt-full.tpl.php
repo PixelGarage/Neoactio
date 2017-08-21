@@ -25,7 +25,6 @@ print $layout_attributes; ?> class="<?php print $classes; ?>">
   <div class="projekt-modal">
     <div class="projekt-title"><?php print render($content['title']); ?></div>
     <div class="projekt-slogan"><?php print $slogan; ?></div>
-    <div class="projekt-year"><?php print $year; ?></div>
     <div class="projekt-body"><?php print render($content['body']); ?></div>
   </div>
 </<?php print $central_wrapper; ?>>

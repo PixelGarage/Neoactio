@@ -14,7 +14,10 @@
 function pixelgarage_links__locale_block(&$vars) {
   foreach ($vars['links'] as $language => $langInfo) {
     $abbr = $langInfo['language']->name;
-    $vars['links'][$language]['title'] = strtolower(substr($abbr, 0, 3));
+    $vars['links'][$language]['title'] = strtolower(substr($abbr, 0, 2));
+    if ($vars['links'][$language]['title'] == 'ge') {
+      $vars['links'][$language]['title'] = 'de';
+    }
   }
   $content = theme_links($vars);
   return $content;
