@@ -42,7 +42,71 @@
     }
   }
 
-  //
+  .carousel-slide-top-bottom() {
+    > .carousel-inner {
+      .item {
+        // WebKit CSS3 transforms for supported devices
+        @media all and (transform-3d), (-webkit-transform-3d) {
+          &.next,
+          &.active.right {
+            .translate3d(0, 100%, 0);
+            top: 0;
+          }
+          &.prev,
+          &.active.left {
+            .translate3d(0, -100%, 0);
+            top: 0;
+          }
+          &.next.left,
+          &.prev.right,
+          &.active {
+            .translate3d(0, 0, 0);
+            top: 0;
+          }
+        }
+      }
+
+      > .active,
+      > .next,
+      > .prev {
+        display: block;
+      }
+
+      > .active {
+        top: 0;
+        left: 0;
+      }
+
+      > .next,
+      > .prev {
+        position: absolute;
+        left: 0;
+        width: 100%;
+      }
+
+      > .next {
+        top: 100%;
+      }
+      > .prev {
+        top: -100%;
+      }
+      > .next.top,
+      > .prev.bottom {
+        left: 0;
+      }
+
+      > .active.top {
+        top: 100%;
+      }
+      > .active.bottom {
+        top: -100%;
+      }
+
+    }
+  }
+
+
+      //
   // indicators
   .image-indicators() {
     position: absolute;

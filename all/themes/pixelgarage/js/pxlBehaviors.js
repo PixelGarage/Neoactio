@@ -107,16 +107,42 @@
     attach: function(context, settings) {
       var $nodeProjekt = $('.node-projekt.view-mode-full'),
           $infoToggle = $nodeProjekt.find('.toggle-descr'),
-          $projektModal = $nodeProjekt.find('.projekt-modal');
+          $main_container = $('body .main-container'),
+          $projektModal = $main_container.find('.projekt-modal'),
+          $backdrop = $main_container.find('.projekt-backdrop');
 
       $infoToggle.once('toggle', function() {
         $infoToggle.on('click', function() {
           if ($projektModal.hasClass('modal-visible')) {
             $projektModal.removeClass('modal-visible');
+            $('body').removeClass('modal-visible');
           }
           else {
             $projektModal.addClass('modal-visible');
+            $('body').addClass('modal-visible');
           }
+        });
+
+        $backdrop.on('click', function() {
+          $projektModal.removeClass('modal-visible');
+          $('body').removeClass('modal-visible');
+        });
+      });
+    }
+  };
+
+  Drupal.behaviors.carouselNumberUpdate = {
+    attach: function(context, settings) {
+      var $view = $('.view-projekt-images'),
+        $carousel = $view.find('.carousel'),
+        $activeImageNumber = $view.find('.carousel-image-pos');
+
+      $carousel.once('slide-event', function() {
+        $carousel.on('slid.bs.carousel', function(ev) {
+          var $activeImage = $carousel.find('.item.active'),
+              imgNumber = $activeImage.attr('data-image-number');
+
+          $activeImageNumber.html(imgNumber);
         });
       });
     }

@@ -77,7 +77,7 @@
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
         <?php if ($logo): ?>
-          <a class="logo navbar-btn" href="node/74" title="<?php print t('Neoactio'); ?>">
+          <a class="logo navbar-btn" href="<?php print $home_path; ?>" title="<?php print t('Neoactio'); ?>">
             <img src="<?php print $logo; ?>" alt="<?php print t('Neoactio'); ?>"/>
           </a>
         <?php endif; ?>

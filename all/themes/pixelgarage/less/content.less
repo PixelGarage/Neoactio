@@ -43,6 +43,11 @@ html {
 body {
   position: relative;
   min-height: 100%;
+  overflow: auto;
+
+  &.modal-visible {
+    overflow: hidden;
+  }
 
   .main-container {
     padding-bottom: @pxl-footer-height;
@@ -51,22 +56,30 @@ body {
     //
     // project buttons
     .projekt {
-      #pxl-mixins.center-vertically(fixed);
-      z-index: 1200;
+      position: fixed;
+      top: 50%;
+      z-index: 200;
       display: none;
 
       a {
-        padding: 10px;
+        padding: 0;
+        #pxl-mixins.text();
+        text-transform: uppercase;
       }
 
       &.projekt-prev {
-        left: 0;
-        .rotate(-90deg);
+        left: 40px;
+        .transform-origin(top center);
+        #pxl-mixins.transform(translate(-50%, 0));
+        #pxl-mixins.transform(rotate(-90deg));
       }
       &.projekt-next {
-        right: 0;
-        .rotate(-90deg);
+        right: 40px;
+        .transform-origin(bottom center);
+        #pxl-mixins.transform(translate(50%, 0));
+        #pxl-mixins.transform(rotate(-90deg));
       }
+
       @media @narrow{
         display: block;
       }

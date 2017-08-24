@@ -22,16 +22,16 @@ print $layout_attributes; ?> class="<?php print $classes; ?>">
   <div class="project-video">
     <?php print render($content['field_video']); ?>
   </div>
-  <div class="projekt-modal">
-    <div class="projekt-title"><?php print render($content['title']); ?></div>
-    <div class="projekt-slogan"><?php print $slogan; ?></div>
-    <div class="projekt-body"><?php print render($content['body']); ?></div>
-  </div>
 </<?php print $central_wrapper; ?>>
 </div>
 </<?php print $layout_wrapper ?>>
 
-
+<div class="projekt-modal">
+  <div class="projekt-title"><?php print render($content['title']); ?></div>
+  <div class="projekt-slogan"><?php print $slogan; ?></div>
+  <div class="projekt-body"><?php print render($content['body']); ?></div>
+</div>
+<div class="projekt-backdrop"></div>
 <!-- Needed to activate display suite support on forms -->
 <?php if (!empty($drupal_render_children)): ?>
   <?php print $drupal_render_children ?>

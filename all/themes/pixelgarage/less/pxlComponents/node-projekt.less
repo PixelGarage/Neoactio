@@ -13,25 +13,87 @@
 
 // General settings
 // -------------------------
+.projekt-modal {
+  display: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: @zindex-modal;
+  padding: 0 40px 30px;
+  background-color: white;
+
+  &.modal-visible {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid @link-color;
+    #pxl-mixins.text();
+
+    @media @tablet {
+      width: 50%;
+    }
+    @media @normal {
+      width: 33.3333333%;
+    }
+  }
+  .projekt-title {
+    margin-left: 80px;
+
+    .field-name-title {
+      h2 {
+        #pxl-mixins.text();
+        text-decoration: underline;
+      }
+    }
+  }
+  .projekt-slogan{
+    margin: 0 80px 10px;
+    #pxl-mixins.text();
+  }
+  .projekt-body {
+    .field-name-body {
+      margin: 0 0 80px;
+      #pxl-mixins.text();
+    }
+  }
+}
+.projekt-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: @zindex-modal-background;
+
+  .modal-visible & {
+    display: block;
+  }
+}
+
 .node.node-projekt.view-mode-full,
 .node.node-projekt.view-mode-default {
   >.row {
     >div.col-sm-12 {
       position: relative;
-      top: 90px;
+      padding-top: 120px;
+
       .projekt-header {
-        position: relative;
-        top: -80px;
+        position: fixed;
+        top: 40px;
+        left: 0;
+        width:100%;
+        z-index: @zindex-modal + 100;
+
 
         span.toggle-descr,
         a.close-projekt {
           position: absolute;
-          top: -45px;
-          width: 30px;
-          z-index: 20;
-          @media @narrow{
-            top: 0;
-          }
+          top: 0;
+          padding: 0;
+          width: 20px;
+          max-height: 20px;
 
           img {
             display: block;
@@ -43,75 +105,44 @@
           }
         }
         span.toggle-descr {
-          left: 10px;
-          padding: 0 14px;
-          font-family: @pxl-icon-font;
-          font-size: 26px;
-          color: @pxl-color-black;
-          width: 40px;
-          height: 40px;
-          line-height: 40px;
-
-          &:before {
-            content: '\f036';
-          }
-
-          img {
-            display: none;
-          }
+          left: 15px;
         }
         a.close-projekt {
-          right: 25px;
+          right: 15px;
+        }
+
+        @media @narrow{
+          span.toggle-descr,
+          a.close-projekt {
+            width: 30px;
+            max-height: 30px;
+          }
+          span.toggle-descr {
+            left: 30px;
+          }
+          a.close-projekt {
+            right: 30px;
+          }
+        }
+
+        @media @tablet {
+          span.toggle-descr,
+          a.close-projekt {
+            width: 40px;
+            max-height: 40px;
+          }
+          span.toggle-descr {
+            left: 40px;
+          }
+          a.close-projekt {
+            right: 40px;
+          }
         }
 
       }
+
       .project-video{
         text-align: center;
-      }
-
-      .projekt-modal {
-        display: none;
-        position: absolute;
-        top: 0;
-        #pxl-mixins.center-horizontally();
-        z-index: 10;
-        padding: 0 30px 30px 30px;
-        background-color: white;
-        &.modal-visible {
-          display: block;
-          width: 33.3333%;
-          height: 100%;
-          left: 17%;
-          border-right: 2px solid @link-color;
-          #pxl-mixins.text()
-
-          /**@media @narrow{
-            width: 25%;
-            left: 10%;
-          }
-          @media @normal{
-            width: 30%;
-            left: 8%;
-          }**/
-        }
-        .projekt-title {
-          .field-name-title {
-            h2 {
-              #pxl-mixins.text();
-              text-decoration: underline;
-            }
-          }
-        }
-        .projekt-slogan{
-          margin: 0 0 10px;
-          #pxl-mixins.text();
-        }
-        .projekt-body {
-          .field-name-body {
-            margin: 0 0 80px;
-            #pxl-mixins.text();
-          }
-        }
       }
     }
   }

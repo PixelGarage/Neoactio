@@ -8,6 +8,68 @@
 
 // Mixins
 // -------------------------
+//
+// carousel controls
+.carousel-control(@height: 50%) {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  width: 100%;
+  height: @height;
+  #pxl-mixins.border-radius(0);
+  border: none;
+  background: none;
+  z-index: 2;
+
+  .icon-prev, .icon-next {
+    display: none;
+  }
+
+  &.top {
+    top: 0;
+    bottom: auto;
+  }
+
+  &.bottom {
+    bottom: 0;
+    top: auto;
+  }
+}
+
+//
+// Bootstrap carousel
+//
+.carousel() {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  #pxl-mixins.carousel-slide-top-bottom();
+
+  > .carousel-inner {
+    margin-top: 0;
+
+    .item {
+      .field-content {
+        img {
+          margin: 0 auto;
+          width: auto;
+          max-width: 80%;
+          max-height: 700px;
+        }
+      }
+    }
+  }
+
+  > a.carousel-control {
+    .carousel-control();
+  }
+}
+
 
 
 
@@ -18,26 +80,31 @@
 
   .view-content {
     padding: 0;
-    .masonry();
 
-    @media @narrow {
-      .grid-sizer, .pe-item.pe-item-width-25 {
-        width: 25% - @grid-gutter-dist/2;
+    .carousel {
+      .carousel();
+    }
+
+    .carousel-counter-container {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      #pxl-mixins.subtitle();
+
+      .carousel-image-pos {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        #pxl-mixins.center-horizontally();
       }
-      .grid-sizer, .pe-item.pe-item-width-50 {
-        width: 50% - @grid-gutter-dist/2;
-      }
-      .grid-sizer, .pe-item.pe-item-width-55 {
-        width: 55%;
-        #pxl-mixins.center-horizontally() !important;
-      }
-      .grid-sizer, .pe-item.pe-item-width-66 {
-        width: 66.66667%;
-      }
-      .grid-sizer, .pe-item.pe-item-width-100 {
-        width: 100%;
+      .carousel-image-count {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        right: 25px;
       }
     }
+
   }
 
   //

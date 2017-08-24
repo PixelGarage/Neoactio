@@ -15,32 +15,19 @@
 
     .grid-sizer, .pe-item {
       width: 100%;
+      #pxl-mixins.center-horizontally() !important;
     }
 
     .gutter-sizer {
       width: 0;
     }
 
-    @media @narrow {
-      .grid-sizer, .pe-item {
-        width: (50% - @grid-gutter-dist/2);
-      }
-
-      .gutter-sizer {
-        width: @grid-gutter-dist;
-      }
-    }
-
     .pe-item {
-      display: inline-block;
+      display: block;
       overflow: visible;
-      margin: 0 0 (2 * @grid-gutter-dist) !important;
+      margin: 0 auto 50px !important;
       opacity: 1.0;
       #pxl-mixins.transition(opacity 1s);
-
-      @media @narrow {
-        margin: 0 0 @grid-gutter-dist !important;
-      }
 
       &.shown {
         opacity: 1.0;

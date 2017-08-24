@@ -2386,20 +2386,20 @@
 }
 .pxl-subtitle {
   font-family: 'Butler-Bold';
-  font-size: 40px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 1;
   text-align: left;
   color: #000;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .pxl-subtitle {
-    font-size: 5.20833333vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-subtitle {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
