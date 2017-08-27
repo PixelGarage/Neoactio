@@ -14,7 +14,8 @@
   > .pe-container {
 
     .grid-sizer, .pe-item {
-      width: 100%;
+      width: auto;
+      max-width: 1120px;
       #pxl-mixins.center-horizontally() !important;
     }
 
@@ -25,9 +26,17 @@
     .pe-item {
       display: block;
       overflow: visible;
-      margin: 0 auto 50px !important;
+      margin: 0 auto 20px !important;
       opacity: 1.0;
-      #pxl-mixins.transition(opacity 1s);
+      //#pxl-mixins.transition(opacity 1s);
+
+      @media @tablet {
+        margin: 0 auto 35px !important;
+      }
+
+      @media @normal {
+        margin: 0 auto 50px !important;
+      }
 
       &.shown {
         opacity: 1.0;

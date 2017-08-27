@@ -102,7 +102,7 @@
         <?php endif; ?>
     </div>
 
-      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation_filter'])): ?>
         <div class="navbar-collapse collapse" id="navbar-collapse">
           <nav role="navigation">
               <?php if (!empty($primary_nav)): ?>
@@ -110,6 +110,9 @@
               <?php endif; ?>
               <?php if (!empty($secondary_nav)): ?>
                   <?php print render($secondary_nav); ?>
+              <?php endif; ?>
+              <?php if (!empty($page['navigation_filter'])): ?>
+                <?php print render($page['navigation_filter']); ?>
               <?php endif; ?>
           </nav>
         </div>

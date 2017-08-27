@@ -13,172 +13,189 @@
 
 // General settings
 // -------------------------
+.page-modal {
+  display: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: @zindex-modal;
+  padding: 0 40px 30px;
+  background-color: white;
+
+  &.modal-visible {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid @link-color;
+    #pxl-mixins.text();
+  }
+
+  .page-body {
+    padding-top: 120px;
+
+    .field-name-body {
+      margin: 0 0 80px;
+      #pxl-mixins.text();
+    }
+  }
+
+  @media @tablet {
+    &.modal-visible {
+      width: 66.666666%;
+    }
+    .page-body {
+      padding-top: 120px;
+    }
+  }
+  @media @normal {
+    &.modal-visible {
+      width: 66.666666%;
+    }
+  }
+
+}
+
 .node.node-page.view-mode-full,
 .node.node-page.view-mode-default {
-  >.row {
-    >div.col-sm-12 {
+  > .row {
+    > div.col-sm-12 {
+      position: relative;
+      padding-top: 120px;
 
-      >.field-name-title {
+      .projekt-header {
+        position: fixed;
+        top: 40px;
+        left: 0;
+        width:100%;
+        z-index: @zindex-modal + 100;
+
+
+        span.toggle-descr,
+        a.close-projekt {
+          position: absolute;
+          top: 0;
+          padding: 0;
+          width: 20px;
+          max-height: 20px;
+
+          img {
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+          }
+        }
+        span.toggle-descr {
+          left: 15px;
+        }
+        a.close-projekt {
+          right: 15px;
+        }
+
+        @media @narrow{
+          span.toggle-descr,
+          a.close-projekt {
+            width: 30px;
+            max-height: 30px;
+          }
+          span.toggle-descr {
+            left: 30px;
+          }
+          a.close-projekt {
+            right: 30px;
+          }
+        }
+
+        @media @tablet {
+          span.toggle-descr,
+          a.close-projekt {
+            width: 40px;
+            max-height: 40px;
+          }
+          span.toggle-descr {
+            left: 40px;
+          }
+          a.close-projekt {
+            right: 40px;
+          }
+        }
+
+      }
+
+      > .field-name-title {
         h2 {
-          #pxl-mixins.title();
+          #pxl-mixins.subtext();
         }
       }
 
-      >.field-name-body {
-        margin: 0 0 80px;
-        #pxl-mixins.wysiwyg-body();
+      .paragraphs-items {
+        > .field-name-field-paragraphs {
+          > .field-items {
+            position: relative;
+            margin: 0;
 
-      }
+            > .field-item {
+              display: block;
+              margin: 0 auto;
 
-      >.paragraphs-items {
-        >.field-name-field-paragraphs {
-          >.field-items {
-            >.field-item {
-              margin-bottom: @paragraph-margin-bottom;
+              &.even {
+                // image
+                padding: 0;
+                width: 100%;
+                max-width: 1120px;
+                vertical-align: top;
+              }
+
+              &.odd {
+                // text
+                text-align: left;
+                padding: 20px 0 0;
+                width: 160px;
+                #pxl-mixins.subtext();
+
+                a {
+                  text-decoration: underline;
+                }
+              }
+
+
+              @media @tablet {
+                &.even {
+                  width: 50%;
+                }
+
+                &.odd {
+                  position: absolute;
+                  top: 0;
+                  left: 75%;
+                  padding: 0 0 0 20px;
+                  width: 180px;
+                }
+              }
+
+              @media @normal {
+                &.even {
+                  width: 60%;
+                }
+
+                &.odd {
+                  position: absolute;
+                  top: 0;
+                  left: 80%;
+                  width: 200px;
+                }
+              }
+
+
               // see paragraph-item-... less files
             }
           }
         }
       }
 
-    }
-  }
-}
-
-//
-// PAGE SPEKTRUM
-.page-node-62 {
-    .node.node-page.view-mode-full,
-    .node.node-page.view-mode-default {
-      > .row {
-        > div.col-sm-12 {
-
-          > .field-name-title {
-            h2 {
-              #pxl-mixins.title();
-            }
-          }
-
-          > .field-name-body {
-            margin: 0 0 80px;
-            #pxl-mixins.wysiwyg-body();
-          }
-
-          > .paragraphs-items {
-            > .field-name-field-paragraphs {
-              > .field-items {
-                margin: 0 -@paragraph-gutter-width/2;
-
-                > .field-item {
-                  display: inline-block;
-                  margin: 0 0 @paragraph-margin-bottom;
-                  padding: 0 @paragraph-gutter-width/2;
-                  width: 100%;
-                  vertical-align: top;
-
-                  @media @narrow {
-                    margin: 0 -2px @paragraph-margin-bottom;
-                    width: 50%;
-                  }
-
-                  @media @tablet {
-                    margin-bottom: @paragraph-margin-bottom-large;
-                    width: 33.3333333%;
-                  }
-
-                  @media @normal {
-                    width: 25%;
-                  }
-                  &:nth-child(5) {
-                    width: 100%;
-                  }
-
-                  // see paragraph-item-... less files
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-
-//
-// PAGE ABOUT
-.page-node-74 {
-  .node.node-page.view-mode-full,
-  .node.node-page.view-mode-default {
-    > .row {
-      > div.col-sm-12 {
-        text-align: center;
-
-        > .field-name-title {
-          h2 {
-            #pxl-mixins.subtext();
-          }
-        }
-
-        > .field-name-body {
-          margin: 0 0 80px;
-          #pxl-mixins.subtext();
-        }
-
-        > .paragraphs-items {
-          > .field-name-field-paragraphs {
-            > .field-items {
-              margin: 0 -@paragraph-gutter-width/2;
-
-              > .field-item {
-                display: inline-block;
-                margin: 0 0 @paragraph-margin-bottom;
-                padding: 0 @paragraph-gutter-width/2;
-                width: 70%;
-                #pxl-mixins.subtext();
-                vertical-align: top;
-                &:nth-child(2){
-                  width: 200px;
-                  text-align: left;
-                  padding: 0 10px;
-                  #pxl-mixins.subtext();
-
-                  a{
-                    text-decoration: underline;
-                  }
-                }
-
-
-                /**@media @narrow {
-                  margin: 0 -2px @paragraph-margin-bottom;
-                  width: 50%;
-                }
-
-                @media @tablet {
-                  margin-bottom: @paragraph-margin-bottom-large;
-                  width: 33.3333333%;
-                }**/
-
-               /** @media @normal {
-                  width: 25%;
-                  &:nth-child(1) {
-                    width: 25%;
-                  }
-                  &:nth-child(2) {
-                    width: 25%;
-                  }
-                  &:nth-child(3) {
-                    width: 50%;
-                  }
-                }**/
-
-
-                // see paragraph-item-... less files
-              }
-            }
-          }
-        }
-
-      }
     }
   }
 }

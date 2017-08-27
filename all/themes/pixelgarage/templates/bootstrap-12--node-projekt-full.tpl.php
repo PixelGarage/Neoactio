@@ -16,11 +16,8 @@ print $layout_attributes; ?> class="<?php print $classes; ?>">
     <span class="toggle-descr"><img class="icon-info" src="<?php print $info_icon_path; ?>"/></span>
     <a class="close-projekt" href="<?php print $previous_page_path; ?>"><img class="icon-close" src="<?php print $close_icon_path; ?>"/></a>
   </div>
-  <div class="project-images">
+  <div class="projekt-images">
     <?php print render($content['projekt_images']); ?>
-  </div>
-  <div class="project-video">
-    <?php print render($content['field_video']); ?>
   </div>
 </<?php print $central_wrapper; ?>>
 </div>
@@ -31,7 +28,7 @@ print $layout_attributes; ?> class="<?php print $classes; ?>">
   <div class="projekt-slogan"><?php print $slogan; ?></div>
   <div class="projekt-body"><?php print render($content['body']); ?></div>
 </div>
-<div class="projekt-backdrop"></div>
+<div class="modal-backdrop"></div>
 <!-- Needed to activate display suite support on forms -->
 <?php if (!empty($drupal_render_children)): ?>
   <?php print $drupal_render_children ?>

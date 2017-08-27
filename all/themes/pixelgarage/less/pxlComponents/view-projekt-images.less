@@ -4,6 +4,7 @@
 
 // Variables
 // -------------------------
+@image-max-height: 700px;
 
 
 // Mixins
@@ -54,13 +55,17 @@
     margin-top: 0;
 
     .item {
-      .field-content {
-        img {
-          margin: 0 auto;
-          width: auto;
-          max-width: 80%;
-          max-height: 700px;
-        }
+      position: relative;
+      height: @image-max-height;
+
+      img, iframe {
+        display: block;
+        #pxl-mixins.center-xy(absolute);
+        width: 75%;
+        height: auto;
+      }
+      iframe {
+        min-height: @image-max-height;
       }
     }
   }

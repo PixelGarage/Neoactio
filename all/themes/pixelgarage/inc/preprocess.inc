@@ -69,9 +69,13 @@ function _get_random_text() {
 }
 
 
+/* =============================================================================
+ *      Projekt and Page nodes
+ * ========================================================================== */
+
 function pixelgarage_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
   // check node type
-  if ($context['entity_type'] == 'node' && $context['bundle'] == 'projekt') {
+  if ($context['entity_type'] == 'node' && ($context['bundle'] == 'projekt' || $context['bundle'] == 'page')) {
     $view_mode = $context['view_mode'];
     _preprocess_node_projekt($vars, $view_mode);
   }
@@ -91,7 +95,8 @@ function _preprocess_node_projekt(&$vars, $view_mode) {
     $media = null;
     $media_path = false;
     if (!empty($vars['field_images']) && $media = $vars['field_images'][0]) {
-      $media_path = file_create_url($media['uri']);
+      $image_uri = create_projekt_image($media['uri']);
+      $media_path = file_create_url($image_uri);
     }
     $vars['media_path'] = $media_path;
   }
@@ -101,7 +106,39 @@ function _preprocess_node_projekt(&$vars, $view_mode) {
 }
 
 
-function pixelgarage_preprocess_views_bootstrap_carousel_plugin_style(&$vars) {
-  $vars['image_count'] = count($vars['rows']);
+/**
+ * Helper function to create a desaturated image for the hover effect.
+ */
+function create_projekt_image($image_uri) {
+  $style_name = 'projekt-image';
+  $dest = image_style_path($style_name, $image_uri);
+  if (!file_exists($dest)) {
+    $style = image_style_load($style_name);
+    if (isset($style['effects'])) {
+      $success = image_style_create_derivative($style, $image_uri, $dest);
+      return $success ? $dest : $image_uri;
+    }
+  }
 
+  return $dest;
 }
+
+
+/* =============================================================================
+ *      Carousel adaptation
+ * ========================================================================== */
+
+function pixelgarage_preprocess_views_bootstrap_carousel_plugin_style(&$vars) {
+  //
+  // add videos to carousel
+  $view = $vars['view'];
+  $videos = $view->result[0]->field_field_video;
+  foreach ($videos as $index => $video) {
+    $video_row = render($video['rendered']['0']);
+    $vars['rows'][] = $video_row;
+  }
+
+  // set row count
+  $vars['image_count'] = count($vars['rows']);
+}
+

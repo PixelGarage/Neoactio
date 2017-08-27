@@ -19,25 +19,6 @@
   .view-content {
     padding: 0;
     .masonry();
-
-    @media @narrow {
-      .grid-sizer, .pe-item.pe-item-width-25 {
-        width: 25% - @grid-gutter-dist/2;
-      }
-      .grid-sizer, .pe-item.pe-item-width-50 {
-        width: 50% - @grid-gutter-dist/2;
-      }
-      .grid-sizer, .pe-item.pe-item-width-55 {
-        width: 55%;
-        #pxl-mixins.center-horizontally() !important;
-      }
-      .grid-sizer, .pe-item.pe-item-width-66 {
-        width: 66.66667%;
-      }
-      .grid-sizer, .pe-item.pe-item-width-100 {
-        width: 100%;
-      }
-    }
   }
 
   //

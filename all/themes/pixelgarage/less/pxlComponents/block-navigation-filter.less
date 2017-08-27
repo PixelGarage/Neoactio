@@ -1,0 +1,86 @@
+/*
+ *  Navigation filter block component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.region-navigation-filter {
+  .block-views {
+    .views-exposed-form {
+      .views-exposed-widgets {
+        margin: 0;
+
+        .views-exposed-widget {
+          float: none;
+          padding: 0;
+          text-align: center;
+
+          .form-type-bef-link {
+            display: inline-block;
+            margin: -1px 0 0 -1px;
+            padding: 0;
+
+            &[class*='tid-all'] {
+              display: none;
+            }
+
+            a {
+              display: block;
+              margin: 0;
+              padding: 5px 5px 0;
+              #pxl-mixins.subtitle();
+              color: @link-color;
+              text-transform: uppercase;
+              text-decoration: none;
+              border: 1px solid rgba(0,0,0,0.0);
+
+              &:hover {
+                border: 1px solid @link-color;
+                text-decoration: @link-decoration-hover;
+                background-color: #fff;
+              }
+            }
+
+            &.selected {
+              a {
+                border: 1px solid @link-color;
+                text-decoration: @link-decoration-hover;
+                background-color: #fff;
+              }
+            }
+          }
+
+          @media @tablet {
+            .form-type-bef-link {
+              margin: -2px 0 0 -2px;
+
+              a {
+                padding: 8px 8px 0;
+                border: 2px solid rgba(0,0,0,0.0);
+
+                &:hover {
+                  border: 2px solid @link-color;
+                }
+              }
+
+              &.selected {
+                a {
+                  border: 2px solid @link-color;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

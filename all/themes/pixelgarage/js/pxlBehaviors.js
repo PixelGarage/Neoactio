@@ -50,6 +50,9 @@
     }
   };
 
+  /**
+   *
+   * @type {{attach: Drupal.behaviors.randomPeItemWidth.attach}}
   Drupal.behaviors.randomPeItemWidth = {
     attach: function (context, settings) {
       var $view = $('.view.view-werk').add('.view.view-projekt-images');
@@ -102,14 +105,18 @@
       });
     }
   };
+   */
 
   Drupal.behaviors.toggleProjectDescription = {
     attach: function(context, settings) {
       var $nodeProjekt = $('.node-projekt.view-mode-full'),
-          $infoToggle = $nodeProjekt.find('.toggle-descr'),
+          $nodePage = $('.node-page.view-mode-full'),
           $main_container = $('body .main-container'),
+          $infoToggle = $nodeProjekt.find('.toggle-descr'),
           $projektModal = $main_container.find('.projekt-modal'),
-          $backdrop = $main_container.find('.projekt-backdrop');
+          $aboutToggle = $nodePage.find('.toggle-descr'),
+          $pageModal = $main_container.find('.page-modal'),
+          $backdrop = $main_container.find('.modal-backdrop');
 
       $infoToggle.once('toggle', function() {
         $infoToggle.on('click', function() {
@@ -128,6 +135,25 @@
           $('body').removeClass('modal-visible');
         });
       });
+
+      $aboutToggle.once('toggle', function() {
+        $aboutToggle.on('click', function() {
+          if ($pageModal.hasClass('modal-visible')) {
+            $pageModal.removeClass('modal-visible');
+            $('body').removeClass('modal-visible');
+          }
+          else {
+            $pageModal.addClass('modal-visible');
+            $('body').addClass('modal-visible');
+          }
+        });
+
+        $backdrop.on('click', function() {
+          $pageModal.removeClass('modal-visible');
+          $('body').removeClass('modal-visible');
+        });
+      });
+
     }
   };
 
