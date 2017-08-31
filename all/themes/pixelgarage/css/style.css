@@ -15938,6 +15938,7 @@ header#navbar .container .navbar-header .region-navigation #block-locale-languag
 header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language {
   right: 15px;
   top: 15px;
+  margin: -6px 0 0;
 }
 header#navbar .container .navbar-header .region-navigation #block-locale-language li,
 header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li {
@@ -15949,18 +15950,56 @@ header#navbar .container-fluid .navbar-header .region-navigation #block-locale-l
 }
 header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
 header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
-  color: #000;
-  font-size: 12px;
+  margin: 0;
+  padding: 5px 5px 0;
+  font-family: 'Butler-Bold';
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: 1;
+  text-align: left;
+  color: #222;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+@media screen and (min-width: 34.10526315789474em) {
+  header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
+  header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
+    font-size: 4.94791667vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
+  header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 64em) {
+  header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
+  header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
+    font-size: 50px;
+  }
+}
+header#navbar .container .navbar-header .region-navigation #block-locale-language li a:hover,
+header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a:hover {
+  border: 1px solid #222;
+  text-decoration: none;
+  background-color: #fff;
 }
 @media screen and (min-width: 48em) {
   header#navbar .container .navbar-header .region-navigation #block-locale-language,
   header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language {
     right: 40px;
     top: 27px;
+    margin: -10px 0 0;
   }
   header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
   header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
-    font-size: 14px;
+    padding: 8px 8px 0;
+    border: 2px solid rgba(0, 0, 0, 0);
+  }
+  header#navbar .container .navbar-header .region-navigation #block-locale-language li a:hover,
+  header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a:hover {
+    border: 2px solid #222;
   }
 }
 @media screen and (min-width: 64em) {
@@ -15968,10 +16007,6 @@ header#navbar .container-fluid .navbar-header .region-navigation #block-locale-l
   header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language {
     right: 40px;
     top: 40px;
-  }
-  header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
-  header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
-    font-size: 20px;
   }
 }
 header#navbar .container .navbar-collapse,

@@ -176,6 +176,7 @@ header#navbar {
         #block-locale-language{
           right: 15px;
           top: 15px;
+          margin: -6px 0 0;
 
           li {
             display: block;
@@ -185,18 +186,34 @@ header#navbar {
             }
 
             a {
-              color: @pxl-color-black;
-              font-size: 12px;
+              margin: 0;
+              padding: 5px 5px 0;
+              #pxl-mixins.subtitle();
+              color: @link-color;
+              text-transform: uppercase;
+              border: 1px solid rgba(0,0,0,0.0);
+
+              &:hover {
+                border: 1px solid @link-color;
+                text-decoration: @link-decoration-hover;
+                background-color: #fff;
+              }
             }
           }
 
           @media @tablet {
             right: 40px;
             top: 27px;
+            margin: -10px 0 0;
 
             li {
               a {
-                font-size: 14px;
+                padding: 8px 8px 0;
+                border: 2px solid rgba(0,0,0,0.0);
+
+                &:hover {
+                  border: 2px solid @link-color;
+                }
               }
             }
           }
@@ -204,12 +221,6 @@ header#navbar {
           @media @normal {
             right: 40px;
             top: 40px;
-
-            li {
-              a {
-                font-size: 20px;
-              }
-            }
           }
         }
       }
