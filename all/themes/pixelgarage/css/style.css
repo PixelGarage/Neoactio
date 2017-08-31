@@ -11528,8 +11528,14 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: auto;
-  height: 700px;
+  width: 85vw;
+  height: auto;
+}
+@media screen and (min-width: 64em) {
+  .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-media img {
+    width: auto;
+    height: 700px;
+  }
 }
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover {
   display: block;
@@ -16121,7 +16127,7 @@ body.modal-visible {
   overflow: hidden;
 }
 body .main-container {
-  padding-bottom: 100px;
+  padding: 30px 0 100px;
   height: 100%;
 }
 body .main-container .projekt {
@@ -16156,6 +16162,7 @@ body .main-container .projekt a {
 }
 body .main-container .projekt.projekt-prev {
   left: 40px;
+  display: none;
   -webkit-transform-origin: top center;
   -moz-transform-origin: top center;
   -ms-transform-origin: top center;
@@ -16168,6 +16175,7 @@ body .main-container .projekt.projekt-prev {
 }
 body .main-container .projekt.projekt-next {
   right: 40px;
+  display: none;
   -webkit-transform-origin: bottom center;
   -moz-transform-origin: bottom center;
   -ms-transform-origin: bottom center;

@@ -178,8 +178,14 @@
           overflow: hidden;
           margin: 0;
           padding: 0;
-          width: auto;
-          height: @image-max-height;
+          width: @image-max-width-mobile;
+          height: auto;
+
+          @media @normal {
+            width: auto;
+            height: @image-max-height;
+          }
+
         }
       }
 
