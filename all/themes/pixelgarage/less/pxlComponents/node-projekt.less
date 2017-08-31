@@ -170,13 +170,16 @@
       position: relative;
 
       .projekt-media {
+        overflow: hidden;
+        max-width: @image-max-width;
+
         img {
           display: block;
           overflow: hidden;
           margin: 0;
           padding: 0;
-          width: 100%;
-          height: auto;
+          width: auto;
+          height: @image-max-height;
         }
       }
 
@@ -190,6 +193,7 @@
         background-color: #fff;
         opacity: 0.0;
         border: 2px solid;
+
         &:hover {
           opacity: 1.0;
         }

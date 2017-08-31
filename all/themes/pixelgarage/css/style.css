@@ -11519,13 +11519,17 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 {
   position: relative;
 }
+.node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-media {
+  overflow: hidden;
+  max-width: 1120px;
+}
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-media img {
   display: block;
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 700px;
 }
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover {
   display: block;
@@ -14063,7 +14067,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 .view.view-proximity .view-content > .pe-container .pe-item {
   display: block;
-  overflow: visible;
+  overflow: hidden;
   margin: 0 auto 20px !important;
   opacity: 1.0;
 }
@@ -14322,7 +14326,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 .view.view-werk .view-content > .pe-container .pe-item {
   display: block;
-  overflow: visible;
+  overflow: hidden;
   margin: 0 auto 20px !important;
   opacity: 1.0;
 }
@@ -14627,6 +14631,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 .view.view-projekt-images .view-content .carousel > a.carousel-control {
   top: 0;
+  left: 0;
   bottom: 0;
   width: 15%;
   opacity: 0.5;
@@ -14638,10 +14643,10 @@ form#user-profile-form div .form-actions .form-submit .icon {
   background-color: rgba(0, 0, 0, 0);
   display: block;
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 30%;
+  right: 30%;
   padding: 0;
-  width: 100%;
+  width: 40%;
   height: 50%;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;

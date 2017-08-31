@@ -15,7 +15,7 @@
 
     .grid-sizer, .pe-item {
       width: auto;
-      max-width: 1120px;
+      max-width: @image-max-width;
       #pxl-mixins.center-horizontally() !important;
     }
 
@@ -25,7 +25,7 @@
 
     .pe-item {
       display: block;
-      overflow: visible;
+      overflow: hidden;
       margin: 0 auto 20px !important;
       opacity: 1.0;
       //#pxl-mixins.transition(opacity 1s);
