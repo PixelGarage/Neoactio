@@ -14644,6 +14644,10 @@ form#user-profile-form div .form-actions .form-submit .icon {
   max-width: 75%;
   max-height: 100%;
 }
+.view.view-projekt-images .view-content .carousel > .carousel-inner .item iframe {
+  width: 100%;
+  height: 100%;
+}
 .view.view-projekt-images .view-content .carousel > a.carousel-control {
   top: 0;
   left: 0;
