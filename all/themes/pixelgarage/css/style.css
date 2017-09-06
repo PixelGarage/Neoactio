@@ -9947,6 +9947,14 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 /*
  *  Navigation filter block component
  * --------------------------------------------------*/
+.region-navigation-filter {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  .region-navigation-filter {
+    display: block;
+  }
+}
 .region-navigation-filter .block-views .views-exposed-form .views-exposed-widgets {
   margin: 0;
 }
@@ -11440,17 +11448,12 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .modal-visible .modal-backdrop {
   display: block;
 }
-.node.node-projekt.view-mode-full > .row > div.col-sm-12,
-.node.node-projekt.view-mode-default > .row > div.col-sm-12 {
-  position: relative;
-  padding-top: 120px;
-}
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header {
   position: fixed;
-  top: 40px;
-  left: 0;
-  width: 100%;
+  top: 20px;
+  left: 20px;
+  right: 20px;
   z-index: 1150;
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
@@ -11460,8 +11463,8 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   position: absolute;
   top: 0;
   padding: 0;
-  width: 20px;
-  max-height: 20px;
+  width: auto;
+  height: 20px;
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr img,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr img,
@@ -11471,49 +11474,59 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr {
-  left: 15px;
+  left: 0;
 }
 .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
 .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
-  right: 15px;
+  right: 0;
 }
-@media screen and (min-width: 30em) {
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr,
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
-    width: 30px;
-    max-height: 30px;
-  }
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr {
-    left: 30px;
-  }
-  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
-    right: 30px;
-  }
+.node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-images,
+.node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-images {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 @media screen and (min-width: 48em) {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header {
+    top: 30px;
+    left: 30px;
+    right: 30px;
+  }
   .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
   .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr,
   .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
   .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
-    width: 40px;
-    max-height: 40px;
+    height: 30px;
+  }
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-images,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-images {
+    top: 90px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header {
+    top: 40px;
+    left: 40px;
+    right: 40px;
   }
   .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
-  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr {
-    left: 40px;
-  }
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr,
   .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
   .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
-    right: 40px;
+    height: 40px;
+  }
+  .node.node-projekt.view-mode-full > .row > div.col-sm-12 .projekt-images,
+  .node.node-projekt.view-mode-default > .row > div.col-sm-12 .projekt-images {
+    top: 120px;
   }
 }
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 {
@@ -14617,9 +14630,6 @@ form#user-profile-form div .form-actions .form-submit .icon {
 .view.view-projekt-images .view-content .carousel > .carousel-inner {
   margin-top: 0;
 }
-.view.view-projekt-images .view-content .carousel > .carousel-inner .item {
-  height: 700px;
-}
 .view.view-projekt-images .view-content .carousel > .carousel-inner .item img,
 .view.view-projekt-images .view-content .carousel > .carousel-inner .item iframe {
   display: block;
@@ -14629,11 +14639,10 @@ form#user-profile-form div .form-actions .form-submit .icon {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 75%;
+  width: auto;
   height: auto;
-}
-.view.view-projekt-images .view-content .carousel > .carousel-inner .item iframe {
-  min-height: 700px;
+  max-width: 75%;
+  max-height: 100%;
 }
 .view.view-projekt-images .view-content .carousel > a.carousel-control {
   top: 0;
@@ -14731,34 +14740,19 @@ form#user-profile-form div .form-actions .form-submit .icon {
   top: auto;
 }
 .view.view-projekt-images .view-content .carousel-counter-container {
-  position: relative;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   padding: 0;
   font-family: 'Butler-Bold';
-  font-size: 27px;
   letter-spacing: 0;
   line-height: 1;
   text-align: left;
-}
-@media screen and (min-width: 34.10526315789474em) {
-  .view.view-projekt-images .view-content .carousel-counter-container {
-    font-size: 4.94791667vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  .view.view-projekt-images .view-content .carousel-counter-container {
-    font-size: 38px;
-  }
-}
-@media screen and (min-width: 64em) {
-  .view.view-projekt-images .view-content .carousel-counter-container {
-    font-size: 50px;
-  }
+  font-size: 27px;
 }
 .view.view-projekt-images .view-content .carousel-counter-container .carousel-image-pos {
   display: inline-block;
   position: absolute;
-  top: 40px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -14767,26 +14761,25 @@ form#user-profile-form div .form-actions .form-submit .icon {
 .view.view-projekt-images .view-content .carousel-counter-container .carousel-image-count {
   display: inline-block;
   position: absolute;
-  top: 40px;
   right: 25px;
 }
-.view.view-projekt-images .pager.pager--infinite-scroll .pager__item a {
-  display: inline-block;
-  padding: 8px 20px 10px;
-  font-family: 'Butler-Regular';
-  font-size: 16px;
-  line-height: 1;
-  color: #222;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #222;
-  background: none;
+.view.view-projekt-images .view-content .carousel-counter-container .carousel-image-pos,
+.view.view-projekt-images .view-content .carousel-counter-container .carousel-image-count {
+  bottom: 16px;
 }
-.view.view-projekt-images .pager.pager--infinite-scroll .pager__item a:hover,
-.view.view-projekt-images .pager.pager--infinite-scroll .pager__item a.active {
-  color: #000;
-  background: none;
+@media screen and (min-width: 48em) {
+  .view.view-projekt-images .view-content .carousel-counter-container .carousel-image-pos,
+  .view.view-projekt-images .view-content .carousel-counter-container .carousel-image-count {
+    bottom: 23px;
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .view.view-projekt-images .view-content .carousel-counter-container .carousel-image-pos,
+  .view.view-projekt-images .view-content .carousel-counter-container .carousel-image-count {
+    bottom: 31px;
+    font-size: 50px;
+  }
 }
 /*
  *  View profil component
@@ -15740,17 +15733,17 @@ form.webform-client-form div.form-actions a.done-link:hover {
  *  Header section (navigation)
  * --------------------------------------------------*/
 body.navbar-is-fixed-top {
-  padding-top: 84px !important;
+  padding-top: 85px !important;
 }
 body.navbar-is-fixed-top.admin-menu {
-  padding-top: 84px !important;
+  padding-top: 85px !important;
 }
 @media screen and (min-width: 48em) {
   body.navbar-is-fixed-top {
-    padding-top: 138px !important;
+    padding-top: 152px !important;
   }
   body.navbar-is-fixed-top.admin-menu {
-    padding-top: 138px !important;
+    padding-top: 152px !important;
   }
 }
 @media screen and (min-width: 64em) {
@@ -15802,6 +15795,12 @@ header#navbar .container-fluid .navbar-header a.logo img {
   height: 20px;
   width: auto;
 }
+@media screen and (min-width: 30em) {
+  header#navbar .container .navbar-header a.logo img,
+  header#navbar .container-fluid .navbar-header a.logo img {
+    height: 3.9vw;
+  }
+}
 @media screen and (min-width: 48em) {
   header#navbar .container .navbar-header a.logo,
   header#navbar .container-fluid .navbar-header a.logo {
@@ -15810,7 +15809,7 @@ header#navbar .container-fluid .navbar-header a.logo img {
   }
   header#navbar .container .navbar-header a.logo img,
   header#navbar .container-fluid .navbar-header a.logo img {
-    height: 27px;
+    height: 29px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -16162,7 +16161,7 @@ body.modal-visible {
   overflow: hidden;
 }
 body .main-container {
-  padding: 30px 0 100px;
+  padding: 0;
   height: 100%;
 }
 body .main-container .projekt {

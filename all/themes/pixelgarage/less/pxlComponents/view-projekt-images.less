@@ -57,16 +57,13 @@
     margin-top: 0;
 
     .item {
-      height: @image-max-height;
-
       img, iframe {
         display: block;
         #pxl-mixins.center-xy(absolute);
-        width: 75%;
+        width: auto;
         height: auto;
-      }
-      iframe {
-        min-height: @image-max-height;
+        max-width: 75%;
+        max-height: 100%;
       }
     }
   }
@@ -92,31 +89,49 @@
     }
 
     .carousel-counter-container {
-      position: relative;
+      position: fixed;
+      bottom: 0;
       width: 100%;
       padding: 0;
-      #pxl-mixins.subtitle();
+      font-family: @pxl-subtitle-font;
+      letter-spacing: @subtitle-letter-spacing;
+      line-height: @subtitle-line-height;
+      text-align: @subtitle-text-align;
+      font-size: @resp-subtitle-size-min;
 
       .carousel-image-pos {
         display: inline-block;
         position: absolute;
-        top: 40px;
         #pxl-mixins.center-horizontally();
       }
+
       .carousel-image-count {
         display: inline-block;
         position: absolute;
-        top: 40px;
         right: 25px;
+      }
+      .carousel-image-pos,
+      .carousel-image-count {
+        bottom: 16px;
+      }
+
+      @media @tablet {
+        .carousel-image-pos,
+        .carousel-image-count {
+          bottom: 23px;
+          font-size: @resp-subtitle-size-med;
+        }
+      }
+
+      @media @normal {
+        .carousel-image-pos,
+        .carousel-image-count {
+          bottom: 31px;
+          font-size: @resp-subtitle-size-max;
+        }
       }
     }
 
-  }
-
-  //
-  // infinite scrolling more button
-  .pager.pager--infinite-scroll {
-    .infinite-scroll-button();
   }
 }
 

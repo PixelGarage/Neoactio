@@ -174,6 +174,33 @@
     }
   };
 
+  Drupal.behaviors.carouselImageHeight = {
+    attach: function() {
+      var $view = $('.view-projekt-images'),
+        $carousel = $view.find('.carousel'),
+        $items = $carousel.find('.carousel-inner .item'),
+        $window = $(window);
+
+      $window.off('resize');
+      $window.on('resize', function() {
+        var vh = $window.height(),
+          size = 20;
+
+        if ($window.width() > 1024) {
+          size = 40;
+        }
+        else if ($window.width() > 768) {
+          size = 30;
+        }
+
+        $items.height(vh - 6 * size);
+      });
+
+      // initialize items
+      $window.resize();
+    }
+  };
+
   /**
    * Allows full size clickable items.
    Drupal.behaviors.fullSizeClickableItems = {

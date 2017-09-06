@@ -73,17 +73,17 @@
 // Main settings
 // -------------------------
 body.navbar-is-fixed-top {
-  padding-top: 84px !important;
+  padding-top: 85px !important;
 
   &.admin-menu {
-    padding-top: 84px !important;
+    padding-top: 85px !important;
   }
 
   @media @tablet {
-    padding-top: 138px !important;
+    padding-top: 152px !important;
 
     &.admin-menu {
-      padding-top: 138px !important;
+      padding-top: 152px !important;
     }
   }
 
@@ -138,13 +138,21 @@ header#navbar {
         }
       }
 
+      @media @narrow {
+        a.logo {
+          img {
+            height: 3.9vw;
+          }
+        }
+      }
+
       @media @tablet {
         a.logo {
           left: 40px;
           top: 27px;
 
           img {
-            height: 27px;
+            height: 29px;
           }
         }
       }
