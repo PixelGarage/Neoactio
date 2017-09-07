@@ -20,10 +20,10 @@
   height: 100%;
 }
 .cursor-up {
-  cursor: url(../images/arrow-icon-up-small.png), auto;
+  cursor: url(../images/arrow-icon-up-small.png) 16 0, auto;
 }
 .cursor-down {
-  cursor: url(../images/arrow-icon-small.png), auto;
+  cursor: url(../images/arrow-icon-small.png) 16 42, auto;
 }
 
 
@@ -31,10 +31,10 @@
 .carousel-control(@height: 50%) {
   display: block;
   position: absolute;
-  left: 30%;
-  right: 30%;
+  left: 33%;
+  right: 33%;
   padding: 0;
-  width: 40%;
+  width: 34%;
   height: @height;
   #pxl-mixins.border-radius(0);
   border: none;
@@ -72,23 +72,38 @@
     margin-top: 0;
 
     .item {
+      // height is calculated in js
+
       img, iframe {
         display: block;
-        #pxl-mixins.center-xy(absolute);
         width: auto;
         height: auto;
         max-width: 75%;
         max-height: 100%;
       }
-      iframe {
-        width: 100%;
+      img {
+        #pxl-mixins.center-xy(absolute);
+      }
+      .embedded-video{
         height: 100%;
+
+        .player {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+
+          iframe {
+            width: 75%;
+            height: 100%;
+          }
+        }
       }
     }
   }
 
   > a.carousel-control {
-    .carousel-control();
+    .carousel-control(35%);
   }
 }
 
