@@ -11562,6 +11562,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   }
 }
 .node.node-projekt.view-mode-teaser {
+  cursor: pointer;
   display: inline-block;
   overflow: hidden;
   margin: 0 auto 20px;
