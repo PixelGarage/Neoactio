@@ -106,6 +106,19 @@
     }
   };
    */
+  Drupal.behaviors.openProjectFullMode = {
+    attach: function(context, settings) {
+      var $nodeProjekt = $('.node-projekt.view-mode-teaser');
+
+      $nodeProjekt.once('click', function() {
+        $nodeProjekt.on('click', function() {
+          var href = $(this).find('a:first-child').attr('href');
+          window.location = href;
+          return false;
+        });
+      });
+    }
+  };
 
   Drupal.behaviors.toggleProjectDescription = {
     attach: function(context, settings) {

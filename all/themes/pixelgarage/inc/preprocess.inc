@@ -99,6 +99,10 @@ function _preprocess_node_projekt(&$vars, $view_mode) {
       $media_path = file_create_url($image_uri);
     }
     $vars['media_path'] = $media_path;
+
+    // node url
+    $url = 'node/' . $vars['nid'];
+    $vars['node_url'] = url($url);
   }
 
   $vars['slogan'] = !empty($vars['content']['field_text']) ? render($vars['content']['field_text']) : '';

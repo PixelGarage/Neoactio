@@ -10061,7 +10061,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -10087,7 +10087,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   text-decoration: underline;
 }
@@ -10114,7 +10114,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -10231,10 +10231,10 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-page.view-mode-full > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item,
 .node.node-page.view-mode-default > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item {
   display: block;
-  margin: 0 auto;
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item.even,
 .node.node-page.view-mode-default > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item.even {
+  margin: 0 auto;
   padding: 0;
   width: 100%;
   max-width: 1120px;
@@ -10457,7 +10457,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -10510,7 +10510,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   color: #222;
 }
@@ -10550,7 +10550,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-webform .row .col-sm-6 .field-name-body em {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
@@ -10596,7 +10596,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-webform .row .col-sm-6 .field-name-body b {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
@@ -10629,7 +10629,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   color: #222;
 }
@@ -10662,7 +10662,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   background-color: #ff0;
 }
@@ -10912,7 +10912,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -10981,7 +10981,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   color: #222;
 }
@@ -11039,7 +11039,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item em {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
@@ -11113,7 +11113,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item b {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
@@ -11160,7 +11160,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   color: #222;
 }
@@ -11205,7 +11205,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   background-color: #ff0;
 }
@@ -11345,7 +11345,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -11371,7 +11371,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   text-decoration: underline;
 }
@@ -11395,7 +11395,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -11421,7 +11421,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -11464,7 +11464,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
     margin-left: 80px;
   }
   .projekt-modal .projekt-body {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 .modal-backdrop {
@@ -11561,12 +11561,28 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
     top: 120px;
   }
 }
+.node.node-projekt.view-mode-teaser {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  opacity: 1.0;
+}
+@media screen and (min-width: 48em) {
+  .node.node-projekt.view-mode-teaser {
+    margin: 0 auto 35px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .node.node-projekt.view-mode-teaser {
+    margin: 0 auto 50px;
+  }
+}
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 {
   position: relative;
 }
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-media {
   overflow: hidden;
-  max-width: 1120px;
+  max-width: 85vw;
 }
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-media img {
   display: block;
@@ -11579,6 +11595,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 @media screen and (min-width: 64em) {
   .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-media img {
     width: auto;
+    max-width: 1120px;
     height: 700px;
   }
 }
@@ -11606,7 +11623,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -11630,7 +11647,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -11687,7 +11704,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -11747,11 +11764,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-body,
 .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-body {
-  margin: 0 0 80px;
+  margin: 0;
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -12879,7 +12896,7 @@ form#user-login {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -12940,7 +12957,7 @@ form#user-login {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   color: #222;
 }
@@ -12989,7 +13006,7 @@ form#user-login {
 .user-profile .row .col-sm-12 .field-name-field-short-description .field-item em {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
@@ -13049,7 +13066,7 @@ form#user-login {
 .user-profile .row .col-sm-12 .field-name-field-short-description .field-item b {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
@@ -13089,7 +13106,7 @@ form#user-login {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   color: #222;
 }
@@ -13128,7 +13145,7 @@ form#user-login {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   background-color: #ff0;
 }
@@ -13727,7 +13744,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
 }
 @media screen and (min-width: 32em) {
@@ -13772,7 +13789,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   color: #222;
 }
@@ -13803,7 +13820,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item em {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
@@ -13835,7 +13852,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item b {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
@@ -13861,7 +13878,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   color: #222;
 }
@@ -13888,7 +13905,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   background-color: #ff0;
 }
@@ -13950,7 +13967,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   color: #ff0000;
   margin-bottom: 10px;
@@ -14428,215 +14445,11 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 .view.view-werk .view-content {
   padding: 0;
-}
-.view.view-werk .view-content > .pe-container .grid-sizer,
-.view.view-werk .view-content > .pe-container .pe-item {
-  width: auto;
-  max-width: 1120px;
-  left: 50% !important;
-  -webkit-transform: translateX(-50%) !important;
-  -ms-transform: translateX(-50%) !important;
-  transform: translateX(-50%) !important;
-}
-.view.view-werk .view-content > .pe-container .gutter-sizer {
-  width: 0;
-}
-.view.view-werk .view-content > .pe-container .pe-item {
-  display: block;
-  overflow: hidden;
-  margin: 0 auto 20px !important;
-  opacity: 1.0;
-}
-@media screen and (min-width: 48em) {
-  .view.view-werk .view-content > .pe-container .pe-item {
-    margin: 0 auto 35px !important;
-  }
-}
-@media screen and (min-width: 64em) {
-  .view.view-werk .view-content > .pe-container .pe-item {
-    margin: 0 auto 50px !important;
-  }
-}
-.view.view-werk .view-content > .pe-container .pe-item.shown {
-  opacity: 1.0;
-}
-.view.view-werk .view-content > .pe-container .pe-item.pe-item-ajax,
-.view.view-werk .view-content > .pe-container .pe-item.pe-item-no-ajax,
-.view.view-werk .view-content > .pe-container .pe-item.pe-item-linked {
-  cursor: pointer;
-}
-.view.view-werk .view-content > .pe-container .modal {
-  background-color: #ff0000;
-}
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height {
-  height: 100%;
-  overflow: hidden;
-}
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog {
-  height: 100%;
-}
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content {
-  height: 100%;
-}
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header,
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer {
-  position: relative;
-}
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading,
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading {
-  display: block;
-  position: absolute;
-  top: auto;
-  left: 0;
-  right: 0;
-  height: 1px;
-  z-index: 10;
-}
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading.body-fading-top,
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading.body-fading-top {
-  bottom: -1px;
-  background-image: -webkit-linear-gradient(top, #aaa 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(top, #aaa 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(to bottom, #aaa 0%, rgba(0, 0, 0, 0) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaaaaaa', endColorstr='#00000000', GradientType=0);
-}
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading.body-fading-bottom,
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading.body-fading-bottom {
-  top: -1px;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaa 100%);
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaa 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #aaa 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ffaaaaaa', GradientType=0);
-}
-.view.view-werk .view-content > .pe-container .modal.modal-fixed-height .modal-dialog .modal-content .modal-body {
-  overflow-y: auto;
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog {
-  margin: 0 auto;
-  width: 100%;
-}
-.admin-menu .view.view-werk .view-content > .pe-container .modal .modal-dialog {
-  margin: 29px auto 0;
-}
-@media screen and (min-width: 30em) {
-  .view.view-werk .view-content > .pe-container .modal .modal-dialog {
-    min-width: 480px;
-    max-width: 690px;
-    width: 90%;
-  }
-}
-@media screen and (min-width: 48em) {
-  .view.view-werk .view-content > .pe-container .modal .modal-dialog {
-    max-width: 800px;
-  }
-}
-@media screen and (min-width: 64em) {
-  .view.view-werk .view-content > .pe-container .modal .modal-dialog {
-    width: 800px;
-  }
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content {
-  position: relative;
-  padding: 0;
-  background: none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header {
-  padding: 0;
-  min-height: 60px;
-  border: none;
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-  font-family: 'Butler-Bold';
-  font-size: 54px;
-  letter-spacing: 0;
-  line-height: 1;
-  text-align: left;
-}
-@media screen and (min-width: 34.10526315789474em) {
-  .view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-    font-size: 9.89583333vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  .view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-    font-size: 76px;
-  }
-}
-@media screen and (min-width: 64em) {
-  .view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-    font-size: 100px;
-  }
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header button.close {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  opacity: 1.0;
-  z-index: 1;
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header button.close span {
-  padding: 0;
-  font-family: 'Butler-Regular';
-  font-size: 60px;
-  font-weight: normal;
-  color: #222;
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header .body-fading {
-  display: none;
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-body {
-  padding: 20px 15px 30px;
-}
-@media screen and (min-width: 30em) {
-  .view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-body {
-    padding-bottom: 50px;
-  }
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer {
-  display: none;
-  padding: 10px 0;
-  border: none;
   text-align: center;
 }
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .btn {
-  display: inline-block;
-  font-family: 'Butler-Regular';
-  color: #fff;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  border: 8px solid #222;
-  background-color: #ff0000;
-  -webkit-box-shadow: 0 0 4px rgba(100, 100, 100, 0.4);
-  box-shadow: 0 0 4px rgba(100, 100, 100, 0.4);
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .btn:hover {
-  color: #ff0000;
-  background-color: #fff;
-}
-.view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-footer .body-fading {
-  display: none;
-}
-.view.view-werk .view-content > .pe-container #proximity-ajax-loader {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.view.view-werk .view-content .views-row {
+  display: block;
   text-align: center;
-}
-.view.view-werk .view-content > .pe-container #proximity-ajax-loader img {
-  display: inline-block;
-  max-height: 15px;
 }
 .view.view-werk .pager.pager--infinite-scroll .pager__item a {
   display: inline-block;
@@ -14835,9 +14648,9 @@ form#user-profile-form div .form-actions .form-submit .icon {
   bottom: 0;
   width: 100%;
   padding: 0;
-  font-family: 'Butler-Bold';
+  font-family: 'Butler-Regular';
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   font-size: 27px;
 }
@@ -14881,23 +14694,12 @@ form#user-profile-form div .form-actions .form-submit .icon {
 .view.view-news .view-content {
   margin: 0 -15px;
   padding: 0;
-  /** @media @narrow {
-      .views-row {
-        width: 50%;
-      }
-    }
-
-    @media @normal {
-      .views-row {
-        width: 33.333333%;
-      }
-    }**/
 }
 .view.view-news .view-content .views-row {
   display: block;
   vertical-align: top;
   overflow: visible;
-  margin: 0 -2px 30px;
+  margin: 0 -2px 40px;
   padding: 0 15px;
   width: 100%;
   opacity: 1.0;
@@ -14912,6 +14714,16 @@ form#user-profile-form div .form-actions .form-submit .icon {
 .view.view-news .view-content .views-row.pe-item-no-ajax,
 .view.view-news .view-content .views-row.pe-item-linked {
   cursor: pointer;
+}
+@media screen and (min-width: 30em) {
+  .view.view-news .view-content .views-row {
+    margin: 0 -2px 80px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .view.view-news .view-content .views-row {
+    margin: 0 -2px 120px;
+  }
 }
 /*
  *  Webform Addons component
@@ -16073,7 +15885,7 @@ header#navbar .container-fluid .navbar-header .region-navigation #block-locale-l
   line-height: 1;
   text-align: left;
   color: #222;
-  text-transform: uppercase;
+  text-transform: lowercase;
   border: 1px solid rgba(0, 0, 0, 0);
 }
 @media screen and (min-width: 34.10526315789474em) {
@@ -16289,7 +16101,7 @@ body .main-container .projekt a {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
   text-align: left;
   text-transform: uppercase;
 }

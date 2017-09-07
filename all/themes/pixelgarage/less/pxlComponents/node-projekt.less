@@ -83,7 +83,7 @@
       margin-left: 80px;
     }
     .projekt-body {
-      margin-top: 40px;
+      margin-top: 30px;
     }
   }
 
@@ -147,7 +147,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        
+
         // see view-projekt-images.less
       }
 
@@ -189,13 +189,26 @@
 }
 
 .node.node-projekt.view-mode-teaser {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  opacity: 1.0;
+
+  @media @tablet {
+    margin: 0 auto 35px;
+  }
+
+  @media @normal {
+    margin: 0 auto 50px;
+  }
+
   > .row {
     > div.col-sm-12 {
       position: relative;
 
       .projekt-media {
         overflow: hidden;
-        max-width: @image-max-width;
+        max-width: @image-max-width-mobile;
 
         img {
           display: block;
@@ -207,6 +220,7 @@
 
           @media @normal {
             width: auto;
+            max-width: @image-max-width;
             height: @image-max-height;
           }
 
