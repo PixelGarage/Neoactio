@@ -31,8 +31,20 @@
     #pxl-mixins.text();
   }
 
+  .projekt-title {
+    margin: 15px 0 0 20px;
+
+    .field-name-title {
+      h2 {
+        margin: 0;
+        #pxl-mixins.text();
+        text-decoration: underline;
+      }
+    }
+  }
+
   .page-body {
-    padding-top: 120px;
+    padding-top: 20px;
 
     .field-name-body {
       margin: 0 0 80px;
@@ -44,13 +56,22 @@
     &.modal-visible {
       width: 66.666666%;
     }
+    .projekt-title {
+      margin: 28px 0 0 60px;
+    }
     .page-body {
-      padding-top: 120px;
+      padding-top: 30px;
     }
   }
   @media @normal {
     &.modal-visible {
       width: 66.666666%;
+    }
+    .projekt-title {
+      margin: 36px 0 0 80px;
+    }
+    .page-body {
+      padding-top: 40px;
     }
   }
 
@@ -61,14 +82,13 @@
   > .row {
     > div.col-sm-12 {
       position: relative;
-      padding-top: 120px;
 
       .projekt-header {
         position: fixed;
-        top: 40px;
-        left: 0;
-        width:100%;
-        z-index: @zindex-modal + 100;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        z-index: (@zindex-modal + 100);
 
 
         span.toggle-descr,
@@ -76,58 +96,49 @@
           position: absolute;
           top: 0;
           padding: 0;
-          width: 20px;
-          max-height: 20px;
+          width: auto;
+          height: 20px;
 
           img {
             display: block;
             overflow: hidden;
             margin: 0;
             padding: 0;
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 100%;
           }
         }
         span.toggle-descr {
-          left: 15px;
+          left: 0;
         }
         a.close-projekt {
-          right: 15px;
+          right: 0;
         }
-
-        @media @narrow{
-          span.toggle-descr,
-          a.close-projekt {
-            width: 30px;
-            max-height: 30px;
-          }
-          span.toggle-descr {
-            left: 30px;
-          }
-          a.close-projekt {
-            right: 30px;
-          }
-        }
-
-        @media @tablet {
-          span.toggle-descr,
-          a.close-projekt {
-            width: 40px;
-            max-height: 40px;
-          }
-          span.toggle-descr {
-            left: 40px;
-          }
-          a.close-projekt {
-            right: 40px;
-          }
-        }
-
       }
 
-      > .field-name-title {
-        h2 {
-          #pxl-mixins.subtext();
+      @media @tablet{
+        .projekt-header {
+          top: 30px;
+          left: 30px;
+          right: 30px;
+
+          span.toggle-descr,
+          a.close-projekt {
+            height: 30px;
+          }
+        }
+      }
+
+      @media @normal {
+        .projekt-header {
+          top: 40px;
+          left: 40px;
+          right: 40px;
+
+          span.toggle-descr,
+          a.close-projekt {
+            height: 40px;
+          }
         }
       }
 

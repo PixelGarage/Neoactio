@@ -32,10 +32,11 @@
   }
 
   .projekt-title {
-    margin-left: 40px;
+    margin: 15px 0 0 20px;
 
     .field-name-title {
       h2 {
+        margin: 0;
         #pxl-mixins.text();
         text-decoration: underline;
       }
@@ -43,11 +44,13 @@
   }
 
   .projekt-slogan{
-    margin: 0 0 10px 40px;
+    margin-left: 20px;
     #pxl-mixins.text();
   }
 
   .projekt-body {
+    margin-top: 20px;
+
     .field-name-body {
       margin: 0 0 80px;
       #pxl-mixins.text();
@@ -58,16 +61,29 @@
     &.modal-visible {
       width: 50%;
     }
-    .projekt-title, .projekt-slogan {
+    .projekt-title {
+      margin: 28px 0 0 60px;
+    }
+    .projekt-slogan {
       margin-left: 60px;
     }
+    .projekt-body {
+      margin-top: 30px;
+    }
   }
+
   @media @normal {
     &.modal-visible {
       width: 33.3333333%;
     }
-    .projekt-title, .projekt-slogan {
+    .projekt-title {
+      margin: 36px 0 0 80px;
+    }
+    .projekt-slogan {
       margin-left: 80px;
+    }
+    .projekt-body {
+      margin-top: 40px;
     }
   }
 
@@ -131,6 +147,7 @@
         left: 0;
         bottom: 0;
         right: 0;
+        
         // see view-projekt-images.less
       }
 

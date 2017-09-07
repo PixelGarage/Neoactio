@@ -24,6 +24,8 @@
 </<?php print $layout_wrapper ?>>
 
 <div class="page-modal">
+  <div class="projekt-title"><?php print render($content['title']); ?></div>
+  <div class="projekt-slogan"><?php print $slogan; ?></div>
   <div class="page-body"><?php print render($content['body']); ?></div>
 </div>
 <div class="modal-backdrop"></div>

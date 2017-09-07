@@ -16,12 +16,12 @@
   // fading carousel
   .carousel-fade() {
     > .carousel-inner {
-      background: #000000;
+      background: #fff;
 
       @media all and (transform-3d), (-webkit-transform-3d) {
         .item {
           opacity: 0;
-          #pxl-mixins.transition(opacity ease 1s);
+          #pxl-mixins.transition(opacity ease 0s);
 
           &.active {
             opacity: 1.0;

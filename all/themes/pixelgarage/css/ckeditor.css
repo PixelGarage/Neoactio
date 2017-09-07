@@ -2363,25 +2363,25 @@
 .pxl-title {
   margin: 20px auto;
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
   color: #000;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .pxl-title {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-title {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .pxl-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .pxl-subtitle {
@@ -2411,28 +2411,28 @@
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #000;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .pxl-normal {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-normal {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .pxl-normal {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .pxl-subtext {
   font-family: 'Butler-Regular';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
@@ -2440,40 +2440,40 @@
 }
 @media screen and (min-width: 48em) {
   .pxl-subtext {
-    font-size: 1.82291667vw;
+    font-size: 2.08333333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-subtext {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 64em) {
   .pxl-subtext {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .pxl-quote {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
   text-align: center;
   color: #000;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .pxl-quote {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-quote {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .pxl-quote {
-    font-size: 60px;
+    font-size: 100px;
   }
 }

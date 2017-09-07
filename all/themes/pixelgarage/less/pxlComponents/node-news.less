@@ -17,24 +17,74 @@
 .node.node-article.view-mode-default {
   >.row {
     >div.col-sm-12 {
-      max-width: 800px;
       display: block;
       float: none;
       margin: 0 auto;
+
+      >.field-name-post-date {
+        .field-item {
+          display: inline-block;
+          vertical-align: middle;
+          #pxl-mixins.text();
+
+          &:before {
+            display: inline-block;
+            content: '\f111';
+            font-family: @pxl-icon-font;
+            font-size: 12px;
+            vertical-align: middle;
+            padding: 0 0.5em 0.4em;
+          }
+        }
+
+      }
+
       >.field-name-title {
         h2 {
           #pxl-mixins.title();
-          padding-bottom: 20px;
-          text-align: center;
+          margin: 0 0 0 30px;
+          padding: 5px 0 10px;
+          text-align: left;
         }
       }
 
       >.field-name-body {
         margin: 0 0 80px;
         #pxl-mixins.text();
-
-
       }
+
+      @media @tablet {
+        padding: 0 40px;
+
+        >.field-name-post-date {
+          .field-item:before {
+            font-size: 16px;
+          }
+        }
+
+        >.field-name-title {
+          margin: 0 0 0 60px;
+          padding: 7px 0 15px;
+        }
+      }
+
+      @media @normal {
+        max-width: 1120px;
+
+        >.field-name-post-date {
+          .field-item:before {
+            font-size: 16px;
+          }
+        }
+
+        >.field-name-title {
+          .field-item:before {
+            margin: 0 0 0 100px;
+            padding: 10px 0 20px;
+          }
+        }
+      }
+
     }
   }
 }

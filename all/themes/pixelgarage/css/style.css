@@ -10015,7 +10015,22 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
     margin: -2px 0 0 -2px;
   }
   .region-navigation-filter .block-views .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-bef-link a {
-    padding: 8px 8px 0;
+    padding: 10px 8px 0;
+    border: 2px solid rgba(0, 0, 0, 0);
+  }
+  .region-navigation-filter .block-views .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-bef-link a:hover {
+    border: 2px solid #222;
+  }
+  .region-navigation-filter .block-views .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-bef-link.selected a {
+    border: 2px solid #222;
+  }
+}
+@media screen and (min-width: 64em) {
+  .region-navigation-filter .block-views .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-bef-link {
+    margin: -2px 0 0 -2px;
+  }
+  .region-navigation-filter .block-views .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-bef-link a {
+    padding: 12px 8px 0;
     border: 2px solid rgba(0, 0, 0, 0);
   }
   .region-navigation-filter .block-views .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-type-bef-link a:hover {
@@ -10046,74 +10061,109 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .page-modal.modal-visible {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .page-modal.modal-visible {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .page-modal.modal-visible {
-    font-size: 20px;
+    font-size: 30px;
+  }
+}
+.page-modal .projekt-title {
+  margin: 15px 0 0 20px;
+}
+.page-modal .projekt-title .field-name-title h2 {
+  margin: 0;
+  font-family: 'Butler-Regular';
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 1;
+  text-align: left;
+  text-decoration: underline;
+}
+@media screen and (min-width: 32em) {
+  .page-modal .projekt-title .field-name-title h2 {
+    font-size: 3.90625vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .page-modal .projekt-title .field-name-title h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .page-modal .projekt-title .field-name-title h2 {
+    font-size: 30px;
   }
 }
 .page-modal .page-body {
-  padding-top: 120px;
+  padding-top: 20px;
 }
 .page-modal .page-body .field-name-body {
   margin: 0 0 80px;
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .page-modal .page-body .field-name-body {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .page-modal .page-body .field-name-body {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .page-modal .page-body .field-name-body {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 48em) {
   .page-modal.modal-visible {
     width: 66.666666%;
+  }
+  .page-modal .projekt-title {
+    margin: 28px 0 0 60px;
   }
   .page-modal .page-body {
-    padding-top: 120px;
+    padding-top: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .page-modal.modal-visible {
     width: 66.666666%;
+  }
+  .page-modal .projekt-title {
+    margin: 36px 0 0 80px;
+  }
+  .page-modal .page-body {
+    padding-top: 40px;
   }
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12,
 .node.node-page.view-mode-default > .row > div.col-sm-12 {
   position: relative;
-  padding-top: 120px;
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header,
 .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header {
   position: fixed;
-  top: 40px;
-  left: 0;
-  width: 100%;
+  top: 20px;
+  left: 20px;
+  right: 20px;
   z-index: 1150;
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
@@ -10123,8 +10173,8 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   position: absolute;
   top: 0;
   padding: 0;
-  width: 20px;
-  max-height: 20px;
+  width: auto;
+  height: 20px;
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr img,
 .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr img,
@@ -10134,75 +10184,43 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
 .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr {
-  left: 15px;
+  left: 0;
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
 .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
-  right: 15px;
+  right: 0;
 }
-@media screen and (min-width: 30em) {
-  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr,
-  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
-    width: 30px;
-    max-height: 30px;
-  }
-  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr {
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header {
+    top: 30px;
     left: 30px;
-  }
-  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
     right: 30px;
   }
-}
-@media screen and (min-width: 48em) {
   .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
   .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr,
   .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
   .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
-    width: 40px;
-    max-height: 40px;
-  }
-  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr {
-    left: 40px;
-  }
-  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
-    right: 40px;
-  }
-}
-.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
-.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
-  font-family: 'Butler-Regular';
-  font-size: 14px;
-  letter-spacing: normal;
-  line-height: 1.15em;
-  text-align: left;
-}
-@media screen and (min-width: 48em) {
-  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
-    font-size: 1.82291667vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
-    font-size: 14px;
+    height: 30px;
   }
 }
 @media screen and (min-width: 64em) {
-  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
-    font-size: 14px;
+  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header {
+    top: 40px;
+    left: 40px;
+    right: 40px;
+  }
+  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header span.toggle-descr,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header span.toggle-descr,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 .projekt-header a.close-projekt,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 .projekt-header a.close-projekt {
+    height: 40px;
   }
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items,
@@ -10227,7 +10245,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   padding: 20px 0 0;
   width: 160px;
   font-family: 'Butler-Regular';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
@@ -10235,19 +10253,19 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 @media screen and (min-width: 48em) {
   .node.node-page.view-mode-full > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item.odd,
   .node.node-page.view-mode-default > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item.odd {
-    font-size: 1.82291667vw;
+    font-size: 2.08333333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-page.view-mode-full > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item.odd,
   .node.node-page.view-mode-default > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item.odd {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-page.view-mode-full > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item.odd,
   .node.node-page.view-mode-default > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item.odd {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item.odd a,
@@ -10293,27 +10311,27 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-webform .row .col-sm-12 .field-name-title h2,
 .node.node-webform .row .col-sm-6 .field-name-title h2 {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .node.node-webform .row .col-sm-12 .field-name-title h2,
   .node.node-webform .row .col-sm-6 .field-name-title h2 {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform .row .col-sm-12 .field-name-title h2,
   .node.node-webform .row .col-sm-6 .field-name-title h2 {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-webform .row .col-sm-12 .field-name-title h2,
   .node.node-webform .row .col-sm-6 .field-name-title h2 {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-field-image,
@@ -10341,12 +10359,12 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-webform .row .col-sm-6 .field-name-body .pxl-title {
   margin: 10px auto 20px;
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .node.node-webform .row .col-sm-12 .field-name-body h1,
   .node.node-webform .row .col-sm-6 .field-name-body h1,
   .node.node-webform .row .col-sm-12 .field-name-body h2,
@@ -10355,7 +10373,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-webform .row .col-sm-6 .field-name-body h3,
   .node.node-webform .row .col-sm-12 .field-name-body .pxl-title,
   .node.node-webform .row .col-sm-6 .field-name-body .pxl-title {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -10367,7 +10385,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-webform .row .col-sm-6 .field-name-body h3,
   .node.node-webform .row .col-sm-12 .field-name-body .pxl-title,
   .node.node-webform .row .col-sm-6 .field-name-body .pxl-title {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -10379,7 +10397,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-webform .row .col-sm-6 .field-name-body h3,
   .node.node-webform .row .col-sm-12 .field-name-body .pxl-title,
   .node.node-webform .row .col-sm-6 .field-name-body .pxl-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-body h4,
@@ -10439,52 +10457,52 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-webform .row .col-sm-12 .field-name-body p,
   .node.node-webform .row .col-sm-6 .field-name-body p {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform .row .col-sm-12 .field-name-body p,
   .node.node-webform .row .col-sm-6 .field-name-body p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-webform .row .col-sm-12 .field-name-body p,
   .node.node-webform .row .col-sm-6 .field-name-body p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-body .pxl-quote,
 .node.node-webform .row .col-sm-6 .field-name-body .pxl-quote {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
   text-align: center;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .node.node-webform .row .col-sm-12 .field-name-body .pxl-quote,
   .node.node-webform .row .col-sm-6 .field-name-body .pxl-quote {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform .row .col-sm-12 .field-name-body .pxl-quote,
   .node.node-webform .row .col-sm-6 .field-name-body .pxl-quote {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-webform .row .col-sm-12 .field-name-body .pxl-quote,
   .node.node-webform .row .col-sm-6 .field-name-body .pxl-quote {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-body a,
@@ -10492,26 +10510,26 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #222;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-webform .row .col-sm-12 .field-name-body a,
   .node.node-webform .row .col-sm-6 .field-name-body a {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform .row .col-sm-12 .field-name-body a,
   .node.node-webform .row .col-sm-6 .field-name-body a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-webform .row .col-sm-12 .field-name-body a,
   .node.node-webform .row .col-sm-6 .field-name-body a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-body a:hover,
@@ -10532,11 +10550,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-webform .row .col-sm-6 .field-name-body em {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-webform .row .col-sm-12 .field-name-body pre,
   .node.node-webform .row .col-sm-6 .field-name-body pre,
   .node.node-webform .row .col-sm-12 .field-name-body address,
@@ -10545,7 +10563,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-webform .row .col-sm-6 .field-name-body i,
   .node.node-webform .row .col-sm-12 .field-name-body em,
   .node.node-webform .row .col-sm-6 .field-name-body em {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -10557,7 +10575,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-webform .row .col-sm-6 .field-name-body i,
   .node.node-webform .row .col-sm-12 .field-name-body em,
   .node.node-webform .row .col-sm-6 .field-name-body em {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -10569,7 +10587,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-webform .row .col-sm-6 .field-name-body i,
   .node.node-webform .row .col-sm-12 .field-name-body em,
   .node.node-webform .row .col-sm-6 .field-name-body em {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-body strong,
@@ -10578,16 +10596,16 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-webform .row .col-sm-6 .field-name-body b {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-webform .row .col-sm-12 .field-name-body strong,
   .node.node-webform .row .col-sm-6 .field-name-body strong,
   .node.node-webform .row .col-sm-12 .field-name-body b,
   .node.node-webform .row .col-sm-6 .field-name-body b {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -10595,7 +10613,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-webform .row .col-sm-6 .field-name-body strong,
   .node.node-webform .row .col-sm-12 .field-name-body b,
   .node.node-webform .row .col-sm-6 .field-name-body b {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -10603,7 +10621,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-webform .row .col-sm-6 .field-name-body strong,
   .node.node-webform .row .col-sm-12 .field-name-body b,
   .node.node-webform .row .col-sm-6 .field-name-body b {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-body u,
@@ -10611,26 +10629,26 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #222;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-webform .row .col-sm-12 .field-name-body u,
   .node.node-webform .row .col-sm-6 .field-name-body u {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform .row .col-sm-12 .field-name-body u,
   .node.node-webform .row .col-sm-6 .field-name-body u {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-webform .row .col-sm-12 .field-name-body u,
   .node.node-webform .row .col-sm-6 .field-name-body u {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-body u:hover,
@@ -10644,26 +10662,26 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   background-color: #ff0;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-webform .row .col-sm-12 .field-name-body mark,
   .node.node-webform .row .col-sm-6 .field-name-body mark {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform .row .col-sm-12 .field-name-body mark,
   .node.node-webform .row .col-sm-6 .field-name-body mark {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-webform .row .col-sm-12 .field-name-body mark,
   .node.node-webform .row .col-sm-6 .field-name-body mark {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-body hr,
@@ -10738,12 +10756,12 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item .pxl-title {
   margin: 10px auto 20px;
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item h1,
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item h1,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item h1,
@@ -10760,7 +10778,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item .pxl-title,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item .pxl-title,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item .pxl-title {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -10780,7 +10798,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item .pxl-title,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item .pxl-title,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item .pxl-title {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -10800,7 +10818,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item .pxl-title,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item .pxl-title,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item .pxl-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item h4,
@@ -10894,15 +10912,15 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item p,
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item p,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item p,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -10910,7 +10928,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item p,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item p,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -10918,7 +10936,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item p,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item p,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item .pxl-quote,
@@ -10926,18 +10944,18 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item .pxl-quote,
 .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item .pxl-quote {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
   text-align: center;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item .pxl-quote,
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item .pxl-quote,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item .pxl-quote,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item .pxl-quote {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -10945,7 +10963,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item .pxl-quote,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item .pxl-quote,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item .pxl-quote {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -10953,7 +10971,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item .pxl-quote,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item .pxl-quote,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item .pxl-quote {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item a,
@@ -10963,16 +10981,16 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #222;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item a,
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item a,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item a,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item a {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -10980,7 +10998,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item a,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item a,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -10988,7 +11006,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item a,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item a,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item a:hover,
@@ -11021,11 +11039,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item em {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item pre,
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item pre,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item pre,
@@ -11042,7 +11060,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item em,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item em,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item em {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -11062,7 +11080,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item em,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item em,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item em {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -11082,7 +11100,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item em,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item em,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item em {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item strong,
@@ -11095,11 +11113,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item b {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item strong,
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item strong,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item strong,
@@ -11108,7 +11126,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item b,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item b,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item b {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -11120,7 +11138,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item b,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item b,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item b {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -11132,7 +11150,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item b,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item b,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item b {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item u,
@@ -11142,16 +11160,16 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #222;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item u,
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item u,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item u,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item u {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -11159,7 +11177,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item u,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item u,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item u {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -11167,7 +11185,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item u,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item u,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item u {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item u:hover,
@@ -11187,16 +11205,16 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   background-color: #ff0;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item mark,
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item mark,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item mark,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item mark {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -11204,7 +11222,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item mark,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item mark,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item mark {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -11212,7 +11230,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .node.node-footer .row .col-sm-6 .field-name-field-text-left2 .field-item mark,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right .field-item mark,
   .node.node-footer .row .col-sm-6 .field-name-field-text-right2 .field-item mark {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-footer .row .col-sm-6 .field-name-field-text-left .field-item hr,
@@ -11327,112 +11345,126 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .projekt-modal.modal-visible {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .projekt-modal.modal-visible {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .projekt-modal.modal-visible {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .projekt-modal .projekt-title {
-  margin-left: 40px;
+  margin: 15px 0 0 20px;
 }
 .projekt-modal .projekt-title .field-name-title h2 {
+  margin: 0;
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   text-decoration: underline;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .projekt-modal .projekt-title .field-name-title h2 {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .projekt-modal .projekt-title .field-name-title h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .projekt-modal .projekt-title .field-name-title h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .projekt-modal .projekt-slogan {
-  margin: 0 0 10px 40px;
+  margin-left: 20px;
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .projekt-modal .projekt-slogan {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .projekt-modal .projekt-slogan {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .projekt-modal .projekt-slogan {
-    font-size: 20px;
+    font-size: 30px;
   }
+}
+.projekt-modal .projekt-body {
+  margin-top: 20px;
 }
 .projekt-modal .projekt-body .field-name-body {
   margin: 0 0 80px;
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .projekt-modal .projekt-body .field-name-body {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .projekt-modal .projekt-body .field-name-body {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .projekt-modal .projekt-body .field-name-body {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 48em) {
   .projekt-modal.modal-visible {
     width: 50%;
   }
-  .projekt-modal .projekt-title,
+  .projekt-modal .projekt-title {
+    margin: 28px 0 0 60px;
+  }
   .projekt-modal .projekt-slogan {
     margin-left: 60px;
+  }
+  .projekt-modal .projekt-body {
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .projekt-modal.modal-visible {
     width: 33.3333333%;
   }
-  .projekt-modal .projekt-title,
+  .projekt-modal .projekt-title {
+    margin: 36px 0 0 80px;
+  }
   .projekt-modal .projekt-slogan {
     margin-left: 80px;
+  }
+  .projekt-modal .projekt-body {
+    margin-top: 40px;
   }
 }
 .modal-backdrop {
@@ -11574,22 +11606,22 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover .projekt-title .field-name-title h2 {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover .projekt-title .field-name-title h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover .projekt-title .field-name-title h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover .projekt-slogan {
@@ -11598,22 +11630,22 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover .projekt-slogan {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover .projekt-slogan {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover .projekt-slogan {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover .projekt-year {
@@ -11644,37 +11676,73 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
  * --------------------------------------------------*/
 .node.node-article.view-mode-full > .row > div.col-sm-12,
 .node.node-article.view-mode-default > .row > div.col-sm-12 {
-  max-width: 800px;
   display: block;
   float: none;
   margin: 0 auto;
 }
+.node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-post-date .field-item,
+.node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-post-date .field-item {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Butler-Regular';
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 1;
+  text-align: left;
+}
+@media screen and (min-width: 32em) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-post-date .field-item,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-post-date .field-item {
+    font-size: 3.90625vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-post-date .field-item,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-post-date .field-item {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-post-date .field-item,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-post-date .field-item {
+    font-size: 30px;
+  }
+}
+.node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-post-date .field-item:before,
+.node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-post-date .field-item:before {
+  display: inline-block;
+  content: '\f111';
+  font-family: 'fontawesome';
+  font-size: 12px;
+  vertical-align: middle;
+  padding: 0 0.5em 0.4em;
+}
 .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
 .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
+  margin: 0 0 0 30px;
+  padding: 5px 0 10px;
   text-align: left;
-  padding-bottom: 20px;
-  text-align: center;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
   .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
   .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
   .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-body,
@@ -11683,25 +11751,55 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-body,
   .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-body {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-body,
   .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-body {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-body,
   .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-body {
-    font-size: 20px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 {
+    padding: 0 40px;
+  }
+  .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-post-date .field-item:before,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-post-date .field-item:before {
+    font-size: 16px;
+  }
+  .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-title,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-title {
+    margin: 0 0 0 60px;
+    padding: 7px 0 15px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .node.node-article.view-mode-full > .row > div.col-sm-12,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 {
+    max-width: 1120px;
+  }
+  .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-post-date .field-item:before,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-post-date .field-item:before {
+    font-size: 16px;
+  }
+  .node.node-article.view-mode-full > .row > div.col-sm-12 > .field-name-title .field-item:before,
+  .node.node-article.view-mode-default > .row > div.col-sm-12 > .field-name-title .field-item:before {
+    margin: 0 0 0 100px;
+    padding: 10px 0 20px;
   }
 }
 /*
@@ -11754,19 +11852,19 @@ form#user-login {
   font-size: 11px;
   font-weight: normal;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   #user_login_form .form-item label.control-label {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   #user_login_form .form-item label.control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   #user_login_form .form-item label.control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 #user_login_form .form-item input.form-control {
@@ -11787,19 +11885,19 @@ form#user-login {
   box-shadow: none;
   background-color: #fff;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   #user_login_form .form-item input.form-control {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   #user_login_form .form-item input.form-control {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   #user_login_form .form-item input.form-control {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 #user_login_form .form-item input.form-control::-moz-placeholder {
@@ -11828,19 +11926,19 @@ form#user-login {
   font-size: 11px;
   color: #888;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   #user_login_form .form-item .help-block {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   #user_login_form .form-item .help-block {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   #user_login_form .form-item .help-block {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 #user_login_form .form-item .form-textarea-wrapper textarea {
@@ -11889,12 +11987,12 @@ form#user-login {
   font-family: 'Butler-Regular';
   vertical-align: middle;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   #user_login_form .form-item .form-radios .radio > .control-label,
   #user_login_form .form-item .form-checkboxes .radio > .control-label,
   #user_login_form .form-item .form-radios .checkbox > .control-label,
   #user_login_form .form-item .form-checkboxes .checkbox > .control-label {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -11902,7 +12000,7 @@ form#user-login {
   #user_login_form .form-item .form-checkboxes .radio > .control-label,
   #user_login_form .form-item .form-radios .checkbox > .control-label,
   #user_login_form .form-item .form-checkboxes .checkbox > .control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -11910,7 +12008,7 @@ form#user-login {
   #user_login_form .form-item .form-checkboxes .radio > .control-label,
   #user_login_form .form-item .form-radios .checkbox > .control-label,
   #user_login_form .form-item .form-checkboxes .checkbox > .control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 #user_login_form .form-item .form-radios .radio > .control-label > input,
@@ -12166,22 +12264,22 @@ form#user-login {
   font-size: 11px;
   font-weight: normal;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   #user-register-form .form-item label.control-label,
   #user-pass .form-item label.control-label {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   #user-register-form .form-item label.control-label,
   #user-pass .form-item label.control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   #user-register-form .form-item label.control-label,
   #user-pass .form-item label.control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 #user-register-form .form-item input.form-control,
@@ -12203,22 +12301,22 @@ form#user-login {
   box-shadow: none;
   background-color: #fff;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   #user-register-form .form-item input.form-control,
   #user-pass .form-item input.form-control {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   #user-register-form .form-item input.form-control,
   #user-pass .form-item input.form-control {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   #user-register-form .form-item input.form-control,
   #user-pass .form-item input.form-control {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 #user-register-form .form-item input.form-control::-moz-placeholder,
@@ -12252,22 +12350,22 @@ form#user-login {
   font-size: 11px;
   color: #888;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   #user-register-form .form-item .help-block,
   #user-pass .form-item .help-block {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   #user-register-form .form-item .help-block,
   #user-pass .form-item .help-block {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   #user-register-form .form-item .help-block,
   #user-pass .form-item .help-block {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 #user-register-form .form-item .form-textarea-wrapper textarea,
@@ -12328,7 +12426,7 @@ form#user-login {
   font-family: 'Butler-Regular';
   vertical-align: middle;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   #user-register-form .form-item .form-radios .radio > .control-label,
   #user-pass .form-item .form-radios .radio > .control-label,
   #user-register-form .form-item .form-checkboxes .radio > .control-label,
@@ -12337,7 +12435,7 @@ form#user-login {
   #user-pass .form-item .form-radios .checkbox > .control-label,
   #user-register-form .form-item .form-checkboxes .checkbox > .control-label,
   #user-pass .form-item .form-checkboxes .checkbox > .control-label {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -12349,7 +12447,7 @@ form#user-login {
   #user-pass .form-item .form-radios .checkbox > .control-label,
   #user-register-form .form-item .form-checkboxes .checkbox > .control-label,
   #user-pass .form-item .form-checkboxes .checkbox > .control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -12361,7 +12459,7 @@ form#user-login {
   #user-pass .form-item .form-radios .checkbox > .control-label,
   #user-register-form .form-item .form-checkboxes .checkbox > .control-label,
   #user-pass .form-item .form-checkboxes .checkbox > .control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 #user-register-form .form-item .form-radios .radio > .control-label > input,
@@ -12654,12 +12752,12 @@ form#user-login {
 .user-profile .row .col-sm-12 .field-name-field-short-description .field-item .pxl-title {
   margin: 10px auto 20px;
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item h1,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item h1,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item h1,
@@ -12672,7 +12770,7 @@ form#user-login {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item .pxl-title,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item .pxl-title,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item .pxl-title {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -12688,7 +12786,7 @@ form#user-login {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item .pxl-title,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item .pxl-title,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item .pxl-title {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -12704,7 +12802,7 @@ form#user-login {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item .pxl-title,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item .pxl-title,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item .pxl-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .user-profile .row .col-sm-4 .field-name-field-short-description .field-item h4,
@@ -12781,59 +12879,59 @@ form#user-login {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item p,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item p,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item p,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item p,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item p,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item p,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .user-profile .row .col-sm-4 .field-name-field-short-description .field-item .pxl-quote,
 .user-profile .row .col-sm-8 .field-name-field-short-description .field-item .pxl-quote,
 .user-profile .row .col-sm-12 .field-name-field-short-description .field-item .pxl-quote {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
   text-align: center;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item .pxl-quote,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item .pxl-quote,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item .pxl-quote {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item .pxl-quote,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item .pxl-quote,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item .pxl-quote {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item .pxl-quote,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item .pxl-quote,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item .pxl-quote {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .user-profile .row .col-sm-4 .field-name-field-short-description .field-item a,
@@ -12842,29 +12940,29 @@ form#user-login {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #222;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item a,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item a,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item a {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item a,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item a,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item a,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item a,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .user-profile .row .col-sm-4 .field-name-field-short-description .field-item a:hover,
@@ -12891,11 +12989,11 @@ form#user-login {
 .user-profile .row .col-sm-12 .field-name-field-short-description .field-item em {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item pre,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item pre,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item pre,
@@ -12908,7 +13006,7 @@ form#user-login {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item em,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item em,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item em {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -12924,7 +13022,7 @@ form#user-login {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item em,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item em,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item em {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -12940,7 +13038,7 @@ form#user-login {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item em,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item em,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item em {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .user-profile .row .col-sm-4 .field-name-field-short-description .field-item strong,
@@ -12951,18 +13049,18 @@ form#user-login {
 .user-profile .row .col-sm-12 .field-name-field-short-description .field-item b {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item strong,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item strong,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item strong,
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item b,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item b,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item b {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -12972,7 +13070,7 @@ form#user-login {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item b,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item b,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item b {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -12982,7 +13080,7 @@ form#user-login {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item b,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item b,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item b {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .user-profile .row .col-sm-4 .field-name-field-short-description .field-item u,
@@ -12991,29 +13089,29 @@ form#user-login {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #222;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item u,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item u,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item u {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item u,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item u,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item u {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item u,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item u,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item u {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .user-profile .row .col-sm-4 .field-name-field-short-description .field-item u:hover,
@@ -13030,29 +13128,29 @@ form#user-login {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   background-color: #ff0;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item mark,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item mark,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item mark {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item mark,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item mark,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item mark {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .user-profile .row .col-sm-4 .field-name-field-short-description .field-item mark,
   .user-profile .row .col-sm-8 .field-name-field-short-description .field-item mark,
   .user-profile .row .col-sm-12 .field-name-field-short-description .field-item mark {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .user-profile .row .col-sm-4 .field-name-field-short-description .field-item hr,
@@ -13129,27 +13227,27 @@ form#user-profile-form div #edit-account .panel-heading {
 form#user-profile-form div fieldset.panel .panel-heading .panel-title,
 form#user-profile-form div #edit-account .panel-heading .panel-title {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   form#user-profile-form div fieldset.panel .panel-heading .panel-title,
   form#user-profile-form div #edit-account .panel-heading .panel-title {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   form#user-profile-form div fieldset.panel .panel-heading .panel-title,
   form#user-profile-form div #edit-account .panel-heading .panel-title {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   form#user-profile-form div fieldset.panel .panel-heading .panel-title,
   form#user-profile-form div #edit-account .panel-heading .panel-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 form#user-profile-form div fieldset.panel .panel-body,
@@ -13171,19 +13269,19 @@ form#user-profile-form div .form-wrapper .form-item label.control-label {
   font-size: 11px;
   font-weight: normal;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   form#user-profile-form div .form-wrapper .form-item label.control-label {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   form#user-profile-form div .form-wrapper .form-item label.control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   form#user-profile-form div .form-wrapper .form-item label.control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 form#user-profile-form div .form-wrapper .form-item input.form-control {
@@ -13204,19 +13302,19 @@ form#user-profile-form div .form-wrapper .form-item input.form-control {
   box-shadow: none;
   background-color: #fff;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   form#user-profile-form div .form-wrapper .form-item input.form-control {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   form#user-profile-form div .form-wrapper .form-item input.form-control {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   form#user-profile-form div .form-wrapper .form-item input.form-control {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 form#user-profile-form div .form-wrapper .form-item input.form-control::-moz-placeholder {
@@ -13245,19 +13343,19 @@ form#user-profile-form div .form-wrapper .form-item .help-block {
   font-size: 11px;
   color: #888;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   form#user-profile-form div .form-wrapper .form-item .help-block {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   form#user-profile-form div .form-wrapper .form-item .help-block {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   form#user-profile-form div .form-wrapper .form-item .help-block {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 form#user-profile-form div .form-wrapper .form-item .form-textarea-wrapper textarea {
@@ -13306,12 +13404,12 @@ form#user-profile-form div .form-wrapper .form-item .form-checkboxes .checkbox >
   font-family: 'Butler-Regular';
   vertical-align: middle;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   form#user-profile-form div .form-wrapper .form-item .form-radios .radio > .control-label,
   form#user-profile-form div .form-wrapper .form-item .form-checkboxes .radio > .control-label,
   form#user-profile-form div .form-wrapper .form-item .form-radios .checkbox > .control-label,
   form#user-profile-form div .form-wrapper .form-item .form-checkboxes .checkbox > .control-label {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -13319,7 +13417,7 @@ form#user-profile-form div .form-wrapper .form-item .form-checkboxes .checkbox >
   form#user-profile-form div .form-wrapper .form-item .form-checkboxes .radio > .control-label,
   form#user-profile-form div .form-wrapper .form-item .form-radios .checkbox > .control-label,
   form#user-profile-form div .form-wrapper .form-item .form-checkboxes .checkbox > .control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -13327,7 +13425,7 @@ form#user-profile-form div .form-wrapper .form-item .form-checkboxes .checkbox >
   form#user-profile-form div .form-wrapper .form-item .form-checkboxes .radio > .control-label,
   form#user-profile-form div .form-wrapper .form-item .form-radios .checkbox > .control-label,
   form#user-profile-form div .form-wrapper .form-item .form-checkboxes .checkbox > .control-label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 form#user-profile-form div .form-wrapper .form-item .form-radios .radio > .control-label > input,
@@ -13525,24 +13623,24 @@ form#user-profile-form div .form-actions .form-submit .icon {
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-title .field-item {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item {
@@ -13560,17 +13658,17 @@ form#user-profile-form div .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-title {
   margin: 10px auto 20px;
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-title {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -13578,7 +13676,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-title {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -13586,7 +13684,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h4,
@@ -13629,68 +13727,68 @@ form#user-profile-form div .form-actions .form-submit .icon {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item p {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-quote {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
   text-align: center;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-quote {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-quote {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-quote {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #222;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a:hover,
@@ -13705,16 +13803,16 @@ form#user-profile-form div .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item em {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item em {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -13722,7 +13820,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item em {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
@@ -13730,56 +13828,56 @@ form#user-profile-form div .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item em {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item strong,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item b {
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   font-family: 'Butler-Regular';
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item b {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item b {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item b {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #222;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u:hover,
@@ -13790,23 +13888,23 @@ form#user-profile-form div .form-actions .form-submit .icon {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   background-color: #ff0;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item mark {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item mark {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item mark {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item hr {
@@ -13852,24 +13950,24 @@ form#user-profile-form div .form-actions .form-submit .icon {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   color: #ff0000;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .entity-paragraphs-item.paragraphs-item-block-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-block-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-block-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 /*
@@ -13877,24 +13975,24 @@ form#user-profile-form div .form-actions .form-submit .icon {
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-title .field-item {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-images .field-item img {
@@ -13908,24 +14006,24 @@ form#user-profile-form div .form-actions .form-submit .icon {
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-bs-carousel-paragraph .row .col-sm-12 .field-name-field-title .field-item {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .entity-paragraphs-item.paragraphs-item-bs-carousel-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .entity-paragraphs-item.paragraphs-item-bs-carousel-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .entity-paragraphs-item.paragraphs-item-bs-carousel-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-bs-carousel-paragraph .row .col-sm-12 .field-name-field-images .field-items .carousel {
@@ -13937,14 +14035,14 @@ form#user-profile-form div .form-actions .form-submit .icon {
   height: auto;
 }
 .entity-paragraphs-item.paragraphs-item-bs-carousel-paragraph .row .col-sm-12 .field-name-field-images .field-items .carousel.carousel-fade > .carousel-inner {
-  background: #000000;
+  background: #fff;
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
   .entity-paragraphs-item.paragraphs-item-bs-carousel-paragraph .row .col-sm-12 .field-name-field-images .field-items .carousel.carousel-fade > .carousel-inner .item {
     opacity: 0;
-    -webkit-transition: opacity ease 1s;
-    -o-transition: opacity ease 1s;
-    transition: opacity ease 1s;
+    -webkit-transition: opacity ease 0s;
+    -o-transition: opacity ease 0s;
+    transition: opacity ease 0s;
   }
   .entity-paragraphs-item.paragraphs-item-bs-carousel-paragraph .row .col-sm-12 .field-name-field-images .field-items .carousel.carousel-fade > .carousel-inner .item.active {
     opacity: 1.0;
@@ -14199,24 +14297,24 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 .view.view-proximity .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .view.view-proximity .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .view.view-proximity .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .view.view-proximity .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .view.view-proximity .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header button.close {
@@ -14458,24 +14556,24 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 .view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   .view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   .view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   .view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header h2.modal-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .view.view-werk .view-content > .pe-container .modal .modal-dialog .modal-content .modal-header button.close {
@@ -14561,6 +14659,19 @@ form#user-profile-form div .form-actions .form-submit .icon {
 /*
  *  View projekt images component
  * --------------------------------------------------*/
+.cursor-up,
+.cursor-down {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  height: 100%;
+}
+.cursor-up {
+  cursor: url(../images/arrow-icon-up-small.png), auto;
+}
+.cursor-down {
+  cursor: url(../images/arrow-icon-small.png), auto;
+}
 .view.view-projekt-images {
   width: 100%;
 }
@@ -14575,57 +14686,33 @@ form#user-profile-form div .form-actions .form-submit .icon {
   width: 100%;
   height: auto;
 }
+.view.view-projekt-images .view-content .carousel > .carousel-inner {
+  background: #fff;
+}
 @media all and (transform-3d), (-webkit-transform-3d) {
-  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.next,
-  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.active.right {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    top: 0;
+  .view.view-projekt-images .view-content .carousel > .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition: opacity ease 0s;
+    -o-transition: opacity ease 0s;
+    transition: opacity ease 0s;
   }
-  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.prev,
-  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.active.left {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    top: 0;
-  }
-  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.next.left,
-  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.prev.right,
   .view.view-projekt-images .view-content .carousel > .carousel-inner .item.active {
+    opacity: 1.0;
+  }
+  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.active.left,
+  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.active.right {
+    left: 0;
+    opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    top: 0;
+    z-index: 1;
   }
-}
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .active,
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .next,
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .prev {
-  display: block;
-}
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .active {
-  top: 0;
-  left: 0;
-}
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .next,
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .prev {
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .next {
-  top: 100%;
-}
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .prev {
-  top: -100%;
-}
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .next.top,
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .prev.bottom {
-  left: 0;
-}
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .active.top {
-  top: 100%;
-}
-.view.view-projekt-images .view-content .carousel > .carousel-inner > .active.bottom {
-  top: -100%;
+  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.left.next,
+  .view.view-projekt-images .view-content .carousel > .carousel-inner .item.right.prev {
+    opacity: 1.0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 .view.view-projekt-images .view-content .carousel > .carousel-inner {
   margin-top: 0;
@@ -15758,13 +15845,24 @@ body.navbar-is-fixed-top.admin-menu {
     padding-top: 188px !important;
   }
 }
-body.navbar-is-fixed-top.node-type-projekt,
-body.navbar-is-fixed-top.node-type-page {
-  padding-top: 0 !important;
+body.navbar-is-fixed-top.node-type-projekt header#navbar {
+  display: none;
 }
-body.navbar-is-fixed-top.node-type-projekt header#navbar,
+body.navbar-is-fixed-top.node-type-page {
+  padding-top: 60px !important;
+}
 body.navbar-is-fixed-top.node-type-page header#navbar {
   display: none;
+}
+@media screen and (min-width: 48em) {
+  body.navbar-is-fixed-top.node-type-page {
+    padding-top: 90px !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  body.navbar-is-fixed-top.node-type-page {
+    padding-top: 120px !important;
+  }
 }
 header#navbar {
   border-bottom: none;
@@ -15786,11 +15884,18 @@ header#navbar .container .navbar-header a.logo,
 header#navbar .container-fluid .navbar-header a.logo {
   display: block;
   position: absolute;
-  padding: 0;
-  left: 15px;
-  top: 15px;
+  padding: 7px 5px 5px;
+  left: 7px;
+  top: 7px;
   float: none;
   margin: 0;
+  line-height: 1;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+header#navbar .container .navbar-header a.logo:hover,
+header#navbar .container-fluid .navbar-header a.logo:hover {
+  border: 1px solid #222;
+  background-color: #fff;
 }
 header#navbar .container .navbar-header a.logo img,
 header#navbar .container-fluid .navbar-header a.logo img {
@@ -15808,8 +15913,14 @@ header#navbar .container-fluid .navbar-header a.logo img {
 @media screen and (min-width: 48em) {
   header#navbar .container .navbar-header a.logo,
   header#navbar .container-fluid .navbar-header a.logo {
-    left: 40px;
-    top: 27px;
+    left: 28px;
+    top: 15px;
+    padding: 10px 8px;
+    border: 2px solid rgba(0, 0, 0, 0);
+  }
+  header#navbar .container .navbar-header a.logo:hover,
+  header#navbar .container-fluid .navbar-header a.logo:hover {
+    border: 2px solid #222;
   }
   header#navbar .container .navbar-header a.logo img,
   header#navbar .container-fluid .navbar-header a.logo img {
@@ -15819,8 +15930,9 @@ header#navbar .container-fluid .navbar-header a.logo img {
 @media screen and (min-width: 64em) {
   header#navbar .container .navbar-header a.logo,
   header#navbar .container-fluid .navbar-header a.logo {
-    left: 40px;
-    top: 40px;
+    left: 26px;
+    top: 26px;
+    padding: 12px 8px;
   }
   header#navbar .container .navbar-header a.logo img,
   header#navbar .container-fluid .navbar-header a.logo img {
@@ -15993,11 +16105,11 @@ header#navbar .container-fluid .navbar-header .region-navigation #block-locale-l
   header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language {
     right: 40px;
     top: 27px;
-    margin: -10px 0 0;
+    margin: -12px 0 0;
   }
   header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
   header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
-    padding: 8px 8px 0;
+    padding: 10px 8px 0;
     border: 2px solid rgba(0, 0, 0, 0);
   }
   header#navbar .container .navbar-header .region-navigation #block-locale-language li a:hover,
@@ -16010,6 +16122,11 @@ header#navbar .container-fluid .navbar-header .region-navigation #block-locale-l
   header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language {
     right: 40px;
     top: 40px;
+    margin: -14px 0 0;
+  }
+  header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
+  header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
+    padding: 12px 8px 0;
   }
 }
 header#navbar .container .navbar-collapse,
@@ -16025,7 +16142,7 @@ header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav {
   display: block;
   float: none;
   text-align: center;
-  margin: -6px 0 0;
+  margin: -8px 0 0;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li,
 header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li {
@@ -16037,7 +16154,7 @@ header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li {
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a,
 header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li a {
   margin: 0;
-  padding: 5px 5px 0;
+  padding: 7px 5px 0;
   font-family: 'Butler-Bold';
   font-size: 27px;
   letter-spacing: 0;
@@ -16080,7 +16197,7 @@ header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li a.active {
   }
   header#navbar .container .navbar-collapse nav ul.navbar-nav,
   header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav {
-    margin: -10px 0 0;
+    margin: -12px 0 0;
   }
   header#navbar .container .navbar-collapse nav ul.navbar-nav li,
   header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li {
@@ -16088,7 +16205,7 @@ header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li a.active {
   }
   header#navbar .container .navbar-collapse nav ul.navbar-nav li a,
   header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li a {
-    padding: 8px 8px 0;
+    padding: 10px 8px 0;
     border: 2px solid rgba(0, 0, 0, 0);
   }
   header#navbar .container .navbar-collapse nav ul.navbar-nav li a:hover,
@@ -16105,7 +16222,7 @@ header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li a.active {
   }
   header#navbar .container .navbar-collapse nav ul.navbar-nav,
   header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav {
-    margin: -10px 0 0;
+    margin: -14px 0 0;
   }
   header#navbar .container .navbar-collapse nav ul.navbar-nav li,
   header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li {
@@ -16113,14 +16230,7 @@ header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li a.active {
   }
   header#navbar .container .navbar-collapse nav ul.navbar-nav li a,
   header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li a {
-    padding: 8px 8px 0;
-    border: 2px solid rgba(0, 0, 0, 0);
-  }
-  header#navbar .container .navbar-collapse nav ul.navbar-nav li a:hover,
-  header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li a:hover,
-  header#navbar .container .navbar-collapse nav ul.navbar-nav li a.active,
-  header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li a.active {
-    border: 2px solid #222;
+    padding: 12px 8px 0;
   }
 }
 /*
@@ -16179,23 +16289,23 @@ body .main-container .projekt a {
   font-family: 'Butler-Regular';
   font-size: 20px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1;
   text-align: left;
   text-transform: uppercase;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   body .main-container .projekt a {
-    font-size: 2.60416667vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 48em) {
   body .main-container .projekt a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 64em) {
   body .main-container .projekt a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 body .main-container .projekt.projekt-prev {
@@ -16233,54 +16343,54 @@ body .main-container .container #page-header .region-header h2.block-title,
 body .main-container .container-fluid #page-header .region-header h2.block-title {
   margin: 20px 0 10px;
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   body .main-container .container #page-header .region-header h2.block-title,
   body .main-container .container-fluid #page-header .region-header h2.block-title {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   body .main-container .container #page-header .region-header h2.block-title,
   body .main-container .container-fluid #page-header .region-header h2.block-title {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   body .main-container .container #page-header .region-header h2.block-title,
   body .main-container .container-fluid #page-header .region-header h2.block-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 body .main-container .container .row section h1.page-header,
 body .main-container .container-fluid .row section h1.page-header {
   margin: 20px 0 10px;
   font-family: 'Butler-Bold';
-  font-size: 60px;
+  font-size: 54px;
   letter-spacing: 0;
-  line-height: 66px;
+  line-height: 1;
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 34.10526315789474em) {
   body .main-container .container .row section h1.page-header,
   body .main-container .container-fluid .row section h1.page-header {
-    font-size: 7.8125vw;
+    font-size: 9.89583333vw;
   }
 }
 @media screen and (min-width: 48em) {
   body .main-container .container .row section h1.page-header,
   body .main-container .container-fluid .row section h1.page-header {
-    font-size: 60px;
+    font-size: 76px;
   }
 }
 @media screen and (min-width: 64em) {
   body .main-container .container .row section h1.page-header,
   body .main-container .container-fluid .row section h1.page-header {
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 body .main-container .container .row section .messages,

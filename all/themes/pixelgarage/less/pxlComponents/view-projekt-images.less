@@ -12,6 +12,21 @@
 // Mixins
 // -------------------------
 //
+// cursor
+.cursor-up, .cursor-down {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  height: 100%;
+}
+.cursor-up {
+  cursor: url(../images/arrow-icon-up-small.png), auto;
+}
+.cursor-down {
+  cursor: url(../images/arrow-icon-small.png), auto;
+}
+
+
 // carousel controls
 .carousel-control(@height: 50%) {
   display: block;
@@ -51,7 +66,7 @@
   padding: 0;
   width: 100%;
   height: auto;
-  #pxl-mixins.carousel-slide-top-bottom();
+  #pxl-mixins.carousel-fade();
 
   > .carousel-inner {
     margin-top: 0;

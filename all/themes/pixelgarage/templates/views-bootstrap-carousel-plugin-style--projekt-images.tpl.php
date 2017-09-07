@@ -10,10 +10,10 @@
 
   <?php if ($navigation): ?>
     <!-- Carousel navigation -->
-    <a class="carousel-control top" href="#views-bootstrap-carousel-<?php print $id ?>" data-slide="prev">
+    <a class="carousel-control top cursor-up" href="#views-bootstrap-carousel-<?php print $id ?>" data-slide="prev">
       <span class="icon-prev"></span>
     </a>
-    <a class="carousel-control bottom" href="#views-bootstrap-carousel-<?php print $id ?>" data-slide="next">
+    <a class="carousel-control bottom cursor-down" href="#views-bootstrap-carousel-<?php print $id ?>" data-slide="next">
       <span class="icon-next"></span>
     </a>
   <?php endif ?>

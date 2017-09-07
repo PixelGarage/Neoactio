@@ -95,13 +95,27 @@ body.navbar-is-fixed-top {
     }
   }
 
-  &.node-type-projekt, &.node-type-page {
-    padding-top: 0 !important;
+  &.node-type-projekt {
     header#navbar {
       display: none;
     }
   }
+  &.node-type-page {
+    padding-top: 60px !important;
 
+    header#navbar {
+      display: none;
+    }
+
+    @media @tablet {
+      padding-top: 90px !important;
+    }
+
+    @media @normal {
+      padding-top: 120px !important;
+    }
+
+  }
 }
 
 
@@ -124,11 +138,18 @@ header#navbar {
       a.logo {
         display:block;
         position: absolute;
-        padding: 0;
-        left: 15px;
-        top: 15px;
+        padding: 7px 5px 5px;
+        left: 7px;
+        top: 7px;
         float: none;
         margin: 0;
+        line-height: 1;
+        border: 1px solid rgba(0,0,0,0.0);
+
+        &:hover {
+          border: 1px solid @link-color;
+          background-color: #fff;
+        }
 
         img {
           display: inline-block;
@@ -148,8 +169,14 @@ header#navbar {
 
       @media @tablet {
         a.logo {
-          left: 40px;
-          top: 27px;
+          left: 28px;
+          top: 15px;
+          padding: 10px 8px;
+          border: 2px solid rgba(0,0,0,0.0);
+
+          &:hover {
+            border: 2px solid @link-color;
+          }
 
           img {
             height: 29px;
@@ -159,8 +186,9 @@ header#navbar {
 
       @media @normal {
         a.logo {
-          left: 40px;
-          top: 40px;
+          left: 26px;
+          top: 26px;
+          padding: 12px 8px;
 
           img {
             height: 40px;
@@ -212,11 +240,11 @@ header#navbar {
           @media @tablet {
             right: 40px;
             top: 27px;
-            margin: -10px 0 0;
+            margin: -12px 0 0;
 
             li {
               a {
-                padding: 8px 8px 0;
+                padding: 10px 8px 0;
                 border: 2px solid rgba(0,0,0,0.0);
 
                 &:hover {
@@ -229,6 +257,13 @@ header#navbar {
           @media @normal {
             right: 40px;
             top: 40px;
+            margin: -14px 0 0;
+
+            li {
+              a {
+                padding: 12px 8px 0;
+              }
+            }
           }
         }
       }
@@ -247,7 +282,7 @@ header#navbar {
           float: none;
           text-align: center;
           //justify-content: space-around;
-          margin: -6px 0 0;
+          margin: -8px 0 0;
 
           li {
             //height: 40px;
@@ -258,7 +293,7 @@ header#navbar {
 
             a {
               margin: 0;
-              padding: 5px 5px 0;
+              padding: 7px 5px 0;
               #pxl-mixins.subtitle();
               color: @link-color;
               text-transform: uppercase;
@@ -282,13 +317,13 @@ header#navbar {
 
         nav {
           ul.navbar-nav {
-            margin: -10px 0 0;
+            margin: -12px 0 0;
 
             li {
               margin-left: -6px;
 
               a {
-                padding: 8px 8px 0;
+                padding: 10px 8px 0;
                 border: 2px solid rgba(0,0,0,0.0);
 
                 &:hover,
@@ -307,19 +342,13 @@ header#navbar {
 
         nav {
           ul.navbar-nav {
-            margin: -10px 0 0;
+            margin: -14px 0 0;
 
             li {
               margin-left: -6px;
 
               a {
-                padding: 8px 8px 0;
-                border: 2px solid rgba(0,0,0,0.0);
-
-                &:hover,
-                &.active {
-                  border: 2px solid @link-color;
-                }
+                padding: 12px 8px 0;
               }
             }
           }
