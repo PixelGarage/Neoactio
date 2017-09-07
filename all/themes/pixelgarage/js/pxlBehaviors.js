@@ -111,9 +111,8 @@
       var $nodeProjekt = $('.node-projekt.view-mode-teaser');
 
       $nodeProjekt.once('click', function() {
-        $nodeProjekt.on('click', function() {
-          var href = $(this).find('a:first-child').attr('href');
-          window.location = href;
+        $(this).on('click', function() {
+          window.location = $(this).find('a:first-child').attr('href');
           return false;
         });
       });
