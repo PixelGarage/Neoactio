@@ -5,7 +5,7 @@
 // Variables
 // -------------------------
 @image-max-height: 700px;
-@image-max-height-wide: 1000px;
+@image-max-height-wide: 700px;
 @image-max-width: 1120px;
 @image-max-width-mobile: 85vw;
 
@@ -226,13 +226,13 @@
 
           @media @normal {
             width: auto;
-            max-width: @image-max-width;
+            //max-width: @image-max-width;
             height: @image-max-height;
           }
 
           @media @wide {
             width: auto;
-            max-width: @image-max-width;
+            max-width: none;
             height: @image-max-height-wide;
           }
 

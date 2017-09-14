@@ -11596,15 +11596,14 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 @media screen and (min-width: 64em) {
   .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-media img {
     width: auto;
-    max-width: 1120px;
     height: 700px;
   }
 }
 @media screen and (min-width: 80em) {
   .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-media img {
     width: auto;
-    max-width: 1120px;
-    height: 1000px;
+    max-width: none;
+    height: 700px;
   }
 }
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover {
