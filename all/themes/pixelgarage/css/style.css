@@ -11600,6 +11600,13 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
     height: 700px;
   }
 }
+@media screen and (min-width: 80em) {
+  .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-media img {
+    width: auto;
+    max-width: 1120px;
+    height: 1000px;
+  }
+}
 .node.node-projekt.view-mode-teaser > .row > div.col-sm-12 .projekt-hover {
   display: block;
   position: absolute;
@@ -15692,7 +15699,7 @@ header#navbar .container-fluid .navbar-header a.logo img {
   }
   header#navbar .container .navbar-header a.logo img,
   header#navbar .container-fluid .navbar-header a.logo img {
-    height: 40px;
+    height: 100px;
   }
 }
 header#navbar .container .navbar-header a.navbar-brand,
@@ -15808,7 +15815,7 @@ header#navbar .container-fluid .navbar-header .region-navigation {
 header#navbar .container .navbar-header .region-navigation #block-locale-language,
 header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language {
   right: 15px;
-  top: 15px;
+  top: 12px;
   margin: -6px 0 0;
 }
 header#navbar .container .navbar-header .region-navigation #block-locale-language li,
@@ -15822,12 +15829,13 @@ header#navbar .container-fluid .navbar-header .region-navigation #block-locale-l
 header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
 header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
   margin: 0;
-  padding: 5px 5px 0;
+  padding: 5px 5px 3px;
   font-family: 'Butler-Bold';
   font-size: 27px;
   letter-spacing: 0;
   line-height: 1;
   text-align: left;
+  font-family: 'Butler-Regular';
   color: #222;
   text-transform: lowercase;
   border: 1px solid rgba(0, 0, 0, 0);
@@ -15865,7 +15873,7 @@ header#navbar .container-fluid .navbar-header .region-navigation #block-locale-l
   }
   header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
   header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
-    padding: 10px 8px 0;
+    padding: 7px 8px 3px;
     border: 2px solid rgba(0, 0, 0, 0);
   }
   header#navbar .container .navbar-header .region-navigation #block-locale-language li a:hover,
@@ -15882,7 +15890,7 @@ header#navbar .container-fluid .navbar-header .region-navigation #block-locale-l
   }
   header#navbar .container .navbar-header .region-navigation #block-locale-language li a,
   header#navbar .container-fluid .navbar-header .region-navigation #block-locale-language li a {
-    padding: 12px 8px 0;
+    padding: 8px 8px 3px;
   }
 }
 header#navbar .container .navbar-collapse,
