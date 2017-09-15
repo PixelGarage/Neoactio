@@ -112,9 +112,21 @@
 
       $nodeProjekt.once('click', function() {
         $(this).on('click', function() {
-          window.location = $(this).find('a:first-child').attr('href');
+          var page_y = $(document).scrollTop();
+
+          window.location = $(this).find('a:first-child').attr('href') + '?page_y=' + page_y;
           return false;
         });
+      });
+
+      $(window).off('load');
+      $(window).on('load', function(ev) {
+        var location = window.location.href;
+
+        if ( location.indexOf('page_y') != -1 ) {
+          var match = location.split('?')[1].split("&")[0].split("=");
+          $('html, body').scrollTop( match[1] );
+        }
       });
     }
   };

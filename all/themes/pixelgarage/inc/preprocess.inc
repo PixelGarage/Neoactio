@@ -20,11 +20,17 @@ function pixelgarage_preprocess_html(&$vars) {
  * Override or insert variables for the page templates.
  */
 function pixelgarage_preprocess_page(&$vars) {
+  global $language;
+
   // hide titles on login forms
   pg_login_preprocess_page($vars);
 
   //$vars['logo'] = str_replace(array('.jpg', '.png'), '.svg', $vars['logo']);
-  $vars['home_path'] = file_create_url('/node/74');
+  $about_nodes = translation_node_get_translations(74);
+  $node = $about_nodes[$language->language];
+  $uri = "/{$language->language}/node/" . $node->nid;
+  $vars['home_path'] = file_create_url($uri);
+
 
   $vars['is_project_page'] = false;
   if (isset($vars['node']) && $node = $vars['node'] && $vars['node']->type == 'projekt') {
@@ -82,6 +88,8 @@ function pixelgarage_ds_pre_render_alter(&$layout_render_array, $context, &$vars
 }
 
 function _preprocess_node_projekt(&$vars, $view_mode) {
+  global $language;
+
   //
   // create image paths
   $img_path = drupal_get_path('theme', 'pixelgarage') . '/images/';
@@ -89,7 +97,9 @@ function _preprocess_node_projekt(&$vars, $view_mode) {
   if ($view_mode == 'full') {
     $vars['info_icon_path'] = file_create_url($img_path . 'descr-icon.png');
     $vars['close_icon_path'] = file_create_url($img_path . 'close-icon.png');
-    $vars['previous_page_path'] = file_create_url('/');
+    $page_y = isset($_GET['page_y']) ? $_GET['page_y'] : false;
+    $uri  = isset($_GET['page_y']) ? "/{$language->language}?page_y=" . $_GET['page_y'] : "/{$language->language}";
+    $vars['previous_page_path'] = file_create_url($uri);
   }
   else if ($view_mode == 'teaser') {
     $media = null;
@@ -101,7 +111,7 @@ function _preprocess_node_projekt(&$vars, $view_mode) {
     $vars['media_path'] = $media_path;
 
     // node url
-    $url = 'node/' . $vars['nid'];
+    $url = "node/" . $vars['nid'];
     $vars['node_url'] = url($url);
   }
 
