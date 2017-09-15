@@ -27,7 +27,7 @@ function pixelgarage_preprocess_page(&$vars) {
 
   //$vars['logo'] = str_replace(array('.jpg', '.png'), '.svg', $vars['logo']);
   $about_nodes = translation_node_get_translations(74);
-  $node = $about_nodes[$language->language];
+  $node = isset($about_nodes[$language->language]) ? $about_nodes[$language->language] : 74;
   $uri = "/{$language->language}/node/" . $node->nid;
   $vars['home_path'] = file_create_url($uri);
 
